@@ -1,0 +1,102 @@
+:root {
+  --primary-color-1: #3f2e65;
+  --primary-color-2: #6449a0;
+  --primary-color-3: #977dd6;
+  --primary-color-4: #cbbeea;
+
+  --dark-color-1: #0c0914;
+  --dark-color-2: #1a1229;
+  --dark-color-3: #383838;
+
+  --gray-light-1: #f5f5f5;
+  --gray-light-2: #e0e0e0;
+  --gray-light-3: #cccccc;
+  --gray-light-4: #b8b8b8;
+  --gray-light-5: #a3a3a3;
+
+  --gray-dark-1: #8f8f8f;
+  --gray-dark-2: #666666;
+  --gray-dark-3: #525252;
+  --gray-dark-4: #383838;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  font-family: 1rem;
+}
+
+.header__top {
+  border: 1px solid red;
+  padding: 1rem;
+  display: flex;
+}
+.logo {
+  width: 10%;
+  border: 1px solid green;
+}
+
+.nav__center {
+  width: 80%;
+  /* border: 1px solid green; */
+}
+
+.nav__center .items {
+  color: var(--dark-color-2);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 1.1rem;
+  letter-spacing: .5px;
+  font-weight: 600;
+ 
+}
+
+.nav__center .items li {
+  /* border: 1px solid green; */
+  position: relative;
+  padding: 0.4rem;
+  transition: all .5s;
+  /* border-bottom: 2px solid transparent; */
+}
+
+.nav__center .items li:hover {
+  color: var(--primary-color-2);
+  /* border-bottom: 2px solid red; */
+}
+
+
+.active::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  top: 34px;
+  left: 0;
+  border-bottom: 3px solid var(--primary-color-3);
+  /* background-color: #0c0914; */
+}
+
+
+
+.nav__rigth {
+  border: 1px solid green;
+}
+
+.nav__rigth .items {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
