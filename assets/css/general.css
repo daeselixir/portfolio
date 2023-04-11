@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px;
+   */
+  /* 10px / 16px = 0.625 * 100 = 62.5 */
+  /* es un porcentaje de la fuente del navegador del usuario */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  font-family: 1rem;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
