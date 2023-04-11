@@ -31,3 +31,7 @@ body {
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
+
+.margin__bottom{
+  margin-bottom: 60rem;
+}

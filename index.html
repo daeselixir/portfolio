@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/general.css" />
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Portfolio Fsoto</title>
-  </head>
-  <body>
-    <header>
-      <div class="header__top">
-        <div class="logo">Logo</div>
-        <nav class="nav__center">
-          <ul class="items">
-            <li class="list-item active">Sobre mi</li>
-            <li class="list-item">Educacion & Habilidades</li>
-            <li class="list-item">Areas de Expereriencia</li>
-            <li class="list-item">Contacto</li>
-          </ul>
-        </nav>
-        <nav class="nav__right">
-          <ul class="items">
-            <li class="list-item">
-              <!-- <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAP1JREFUSEu1lGsOwjAMg7OTAScDTgacDGSprtwq6WO0/Tdt8+ckTg/bfI7N+jYCeJjZ3czeZnabNdQCUFg1RwwVHqIfVBzOrysrgNgr2XgmYTwva9E3iaPfdL8MACGvHYT+PYNIiGC0DPMZPuqIvfd6rUOfqkI/pkjk8lQVCqAAh1u3QdM1nKiZCgBUCJ652QC6ZxZACK4OwPQQUqSwHthMHCHkgQDNLYwAs3FkNQTmOdaA03FM+wEATtb1Mq3XM++i3mKpsaL6aGkYWQj32hWKF6U4FusrG5985LtLlSTXSG/tW0khq1lhD0ARpkSzjyiGC8YfRwG9IYfvtwN+ym9CGaXykV4AAAAASUVORK5CYII="/> -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
-                <path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"></path></svg>
-            </li>
-            <li class="list-item">
-              <a href="#" class="btn__idioma">Español</a>
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/general.css" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+
+
+
+  <title>Portfolio Fsoto</title>
+</head>
+
+<body>
+  <header>
+    <div class="header__top">
+
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="">
       </div>
-      <div class="header__bottom"></div>
-      
-    </header>
-  </body>
+      <nav class="nav__center">
+        <ul class="items">
+          <li class="list-item active">Sobre mi</li>
+          <li class="list-item">Educacion & Habilidades</li>
+          <li class="list-item">Areas de Expereriencia</li>
+          <li class="list-item">Contacto</li>
+        </ul>
+      </nav>
+      <nav class="nav__right">
+        <ul class="items">
+          <li class="list-item">
+
+            <i class="fa-regular fa-moon icon"></i>
+          </li>
+
+
+          <li class="list-item">
+            <a href="#" class="btn__idioma">Español</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__bottom">
+      <div class="header__bottom-left">
+        <h1 class="title">Hola, mi <span>nombre</span> es <br>
+          Francisco Soto.
+        </h1>
+        <h3 class="profession">Ingeniero en Computacion e Informatica</h3>
+        <p class="description-profession">Ingeniero, Desarrollador de software y Diseñador UI.</p>
+        <div class="rrss">
+          <ul class="rrss_list">
+            <li><i class="fa-brands fa-github icon_rrss"></i></li>
+            <li><i class="fa-brands fa-instagram icon_rrss"></i></li>
+            <li><i class="fa-brands fa-linkedin-in icon_rrss"></i></li>
+          </ul>
+        </div>
+        <a href="" class="dowloader_cv">Descargar mi resumen</a>
+      </div>
+      <div class="header__bottom-right">
+        <img src="assets/img/it developer.png" alt="">
+      </div>
+
+    </div>
+    <img src="assets/img/Vector.png" alt="" class="vector">
+  </header>
+  <main>
+    <section class="about__me margin__bottom">
+      <h4>Sobre mi</h4>
+      <figure class="about__me-description container">
+        <div class="content">
+          <img src="assets/img/Figure.png" alt="">
+          <figcaption>Hola soy Francisco soto 😎, Ingeniero en computación e informática, Desarrollador, Diseñador UI.
+            Soy un apasionado del mundo de las tecnologías, pero sobre todo un creador.
+            Después de graduarme de la universidad con el título de Ingeniero en computación busque nuevas cosas que
+            aprender relacionadas a mi carrera profesional, en el cual comienzo a tomar experiencia en el desarrollo de
+            software y el diseño.
+            Tengo más de 10 años en distintas áreas dentro del campo de las tecnologías de la información que han
+            fortalecido mis habilidades profesionales.
+            Mi experiencia laboral va desde levantar infraestructura hasta el desarrollo mismo del software.
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+  </main>
+  <script src="https://kit.fontawesome.com/56274993d0.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
