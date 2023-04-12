@@ -31,25 +31,29 @@
   display: flex;
   /* align-items: center;
   justify-content: center; */
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--white);
   margin-bottom: 2rem;
   position: sticky;
   top: 0;
 }
 
-/* logo */
+/* ---- LOGO --- */
+
 .logo {
   /* border: 1px solid blue; */
   width: auto;
+  margin-left: 3rem;
 }
 
 .logo img {
   width: 7rem;
   height: 7rem;
+  cursor: pointer;
 }
 
-/* menu center */
+/* ---- NAV CENTER --- */
+
 .nav__center {
   display: flex;
   flex: 1;
@@ -60,13 +64,13 @@
 
 .nav__center .items {
   /* border: 1px solid green; */
-  color: var(--dark-color-2);
+  color: var(--dark-color-3);
   cursor: pointer;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 0.5px;
   font-weight: 600;
   gap: 2rem;
@@ -93,7 +97,7 @@
   border-bottom: 3px solid var(--primary-color-3);
 }
 
-/* menu right */
+/* ---- NAV RIGTH --- */
 .nav__right {
   display: flex;
   align-items: center;
@@ -114,10 +118,17 @@
 .list-item .btn__idioma {
   padding: 1rem;
   color: var(--primary-color-2);
+  font-family: inherit;
   font-weight: 600;
   border-radius: 5px;
   background-color: var(--primary-color-5);
   text-decoration: none;
+  transition: all 0.5s;
+}
+
+.list-item .btn__idioma:hover {
+  background-color: var(--primary-color-3);
+  color: var(--primary-color-4);
 }
 
 .icon {
@@ -126,17 +137,37 @@
   cursor: pointer;
 }
 
+/* ========= END HEADER TOP ======= */
+
 /* ========= HEADER BOTTOM ======= */
+
 .header__bottom {
   /* border: 1px solid blue; */
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 1rem;
+  margin: 6rem 0 0 0rem;
+  /* margin-bottom: 10rem; */
+}
+
+.header__bottom-left {
+  /* border: 1px solid red; */
+}
+
+.header__bottom-right {
+
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+.header__bottom-right img {
+  /* width: 100%; */
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 5.4rem;
   font-family: inherit;
   font-weight: 600;
   line-height: 1.2;
@@ -161,25 +192,31 @@
   margin-bottom: 1rem;
 }
 
+/* ---- RRSS --- */
+
 .rrss {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   /* border: 1px solid red; */
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .rrss .rrss_list {
   display: flex;
   gap: 0.8rem;
 }
-
 .rrss .rrss_list li {
   list-style: none;
   font-size: 2rem;
   color: var(--primary-color-4);
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   cursor: pointer;
 }
 
+/* ---- BUTTON DOWNLOADER CV --- */
 .dowloader_cv {
+  /* border: 1px solid red; */
   background-color: var(--primary-color-3);
   cursor: pointer;
   padding: 2rem;
@@ -194,12 +231,61 @@
   background-color: var(--primary-color-1);
 }
 
-.vector {
+/* ---- BUTTON ARROW BOTTOM --- */
+.icon__downloader {
+  /* border: 1px solid red; */
   width: 100%;
-  position: absolute;
+  display: flex;
+  /* margin-top: 2rem; */
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+/* agregar efecto al botton */
+.container__icon {
+  cursor: pointer;
+  background-color: var(--white);
+  border: 1px solid var(--gray-light-3);
+  border-radius: 50%;
+
+  padding: 3rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.container__icon:hover {
+  background-color: var(--gray-light-3);
+  border: 1px solid var(--white);
+}
+
+.icon__arrow-bottom {
+  font-size: 4rem;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.icon__arrow-bottom:hover {
+  color: var(--gray-light-1);
+}
+
+.vector {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* position: absolute; */
   bottom: 0;
-  margin: 4rem 0 0 0;
-z-index: -1;
+
+  /* margin-top: 2rem; */
+  /* margin: 4rem 0 0 0; */
+  z-index: 1;
+
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* ========= ABOUT ME ======= */
@@ -234,6 +320,3 @@ z-index: -1;
   font-size: 1.8rem;
   font-weight: 400;
 }
-
-
-
