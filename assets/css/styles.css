@@ -24,11 +24,9 @@
   --black: #000;
 }
 
-
 /* ========= HEADER ======= */
 
 .header__top {
-  
   /* border: 1px solid red; */
   display: flex;
   /* align-items: center;
@@ -36,6 +34,8 @@
   padding: 2rem;
   background-color: var(--white);
   margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
 }
 
 /* logo */
@@ -133,7 +133,6 @@
   align-items: center;
   justify-content: center;
   gap: 8rem;
-  
 }
 
 .title {
@@ -197,11 +196,11 @@
 
 .vector {
   width: 100%;
+  position: absolute;
+  bottom: 0;
   margin: 4rem 0 0 0;
-  
-
+z-index: -1;
 }
-
 
 /* ========= ABOUT ME ======= */
 .about__me {
@@ -209,7 +208,6 @@
   justify-content: center;
   background-color: var(--gray-light-1);
   /* border: 1px solid red; */
-
 }
 
 .about__me-description {
@@ -236,3 +234,6 @@
   font-size: 1.8rem;
   font-weight: 400;
 }
+
+
+

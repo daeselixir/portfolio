@@ -14,11 +14,20 @@ html {
 
 body {
   font-family: "Maven Pro", sans-serif;
-  line-height: 1;
+  /* line-height: 1; */
   font-weight: 400;
   color: #555;
   font-family: 1rem;
 }
+
+header {
+  /* background-color: red; */
+  position: relative;
+  height: 55vh;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
 
 .container {
   max-width: 120rem;
