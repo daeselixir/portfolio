@@ -24,7 +24,16 @@ header {
   /* border: 3px solid green; */
   background-color: rgba(255, 255, 255, 0.521);
   position: relative;
+}
 
+a,
+a:visited,
+a::after {
+  color: #555;
+}
+
+a:hover {
+  color: var(--primary-color-2);
 }
 
 .container {
@@ -55,6 +64,14 @@ header {
 .name__section {
   /* border: 1px solid red; */
   font-size: 2.6rem;
+  display: inline;
+  color: #7e5ccc;
+  margin-left: 48px;
+}
+
+.title__subtitle-section {
+  /* border: 1px solid red; */
+  font-size: 2.2rem;
   display: inline;
   color: #7e5ccc;
   margin-left: 48px;
