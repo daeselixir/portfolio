@@ -722,7 +722,7 @@
 
 /* ========= FOOTER ======= */
 footer {
-  /* border: 2px solid green; */
+  border: 2px solid green;
   background-color: var(--gray-dark-4);
   height: 43vh;
   display: flex;
@@ -757,12 +757,11 @@ footer {
   /* position: relative; */
 }
 
-.information__aditional h4{
+.information__aditional h4 {
   font-size: 3rem;
 }
 
-
-.information__aditional p{
+.information__aditional p {
   font-size: 1.6rem;
 }
 
@@ -774,7 +773,7 @@ footer {
   border: none;
   font-size: 1.6rem;
   font-weight: 600;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, .5);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .space img {
@@ -785,41 +784,29 @@ footer {
   right: 0;
 }
 
-.footer__info::before{
+/* .footer__info::before {
   content: "";
-  position: absolute;
+  
   top: -35px;
   width: 60%;
   height: 1px;
   background-color: var(--gray-light-5);
-}
+} */
 
-.footer__info{
-  position: relative;
-  font-size: 1.6rem;
-  font-family: inherit;
-  border: 1px solid red;
-  align-self: end;
-  padding: .7rem;
-  color: var(--gray-light-4);
+.footer__info {
+  border: 2px solid red;
+  padding: 0.7rem;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-
 
   display: flex;
   justify-content: space-around;
-  align-items: center;
   gap: 4rem;
-  
 }
 
-.footer__info .rrss{
-  border: 1px solid red;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 1rem;
+.footer__info span {
+  border: 1px solid green;
 }
 
 /* ========= END FOOTER ======= */
