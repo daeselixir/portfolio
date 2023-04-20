@@ -722,13 +722,14 @@
 
 /* ========= FOOTER ======= */
 footer {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   background-color: var(--gray-dark-4);
   height: 43vh;
   display: flex;
   /* align-items:center ; */
   justify-content: center;
   position: relative;
+
 }
 
 .space {
@@ -784,29 +785,50 @@ footer {
   right: 0;
 }
 
-/* .footer__info::before {
+.footer__info::before {
   content: "";
-  
+  position: absolute;
   top: -35px;
   width: 60%;
   height: 1px;
   background-color: var(--gray-light-5);
-} */
+}
 
 .footer__info {
-  border: 2px solid red;
-  padding: 0.7rem;
+  /* border: 2px solid red; */
+  /* padding: 0.7rem; */
   position: absolute;
   bottom: 0;
   width: 100%;
 
   display: flex;
+  align-items: center;
   justify-content: space-around;
   gap: 4rem;
+  padding-bottom: 2rem;
 }
 
-.footer__info span {
-  border: 1px solid green;
+.footer__info div {
+  /* border: 1px solid green; */
+  font-size: 1.8rem;
+  color: var(--gray-light-3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__info .rs {
+  cursor: pointer;
+  /* border: 1px solid orangered; */
+  /* height: 25rem; */
+  color: #a3a3a3;
+  /* width: auto; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* ========= END FOOTER ======= */
