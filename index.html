@@ -5,33 +5,39 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/general.css" />
   <link rel="stylesheet" href="assets/css/normalize.css" />
-  <title>Portfolio Fsoto</title>
+  <link href="assets/css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <title>Portfolio Website | Francisco Soto🚀</title>
 </head>
 
 <body>
-  <header>
+  <header class="header" id="header">
     <div class="header__top">
       <div class="logo">
-        <img src="assets/img/logo.png" alt="" />
+
+        <img class="img_logo" src="assets/img/logo.png" alt="" id="logoBawual" />
       </div>
       <nav class="nav__center">
         <ul class="items">
-          <li class="list-item active"><a href="#sobre_mi">Sobre mi</a> </li>
-          <li class="list-item"><a href="#especializacion">Especialización y habilidades</a></li>
-          <li class="list-item"><a href="#experience"> Areas de Expereriencia</a></li>
-          <li class="list-item">Contacto</li>
+          <li class="list-item active"><a class="link" href="#sobre_mi">Sobre mi</a> </li>
+          <li class="list-item"><a class="link" href="#especializacion">Especialización y habilidades</a></li>
+          <li class="list-item"><a class="link" href="#experience"> Areas de Expereriencia</a></li>
+          <li class="list-item"><a class="link" href="#contact"> Contacto</a></li>
+          </li>
         </ul>
       </nav>
       <nav class="nav__right">
         <ul class="items">
           <li class="list-item">
-            <i class="fa-regular fa-moon icon"></i>
+            <i class="fa-regular fa-moon" id="btnDarkmode"></i>
           </li>
 
           <li class="list-item">
@@ -41,26 +47,32 @@
       </nav>
     </div>
     <!-- ========= HEADER BOTTOM ======= -->
-    <div class="header__bottom">
+    <!-- <span class="line"></span> -->
+
+    <div class="header__bottom" id="header__bottom">
+
       <div class="header__bottom-left">
-        <h1 class="title">
-          Hola, mi <span>nombre</span> es <br />
-          Francisco Soto.
+        <div class="line"></div>
+        <h1 class="title ">
+          Hola!<i class="hand">👋</i>,
+          mi <p class="nombre_title">nombre</p> es
+          <span class="effect_machine"> Francisco Soto.</span>
+
         </h1>
-        <h3 class="profession">Ingeniero en Computación e Informatica</h3>
-        <p class="description-profession">
+        <h3 class="profession animate__animated animate__fadeInLeft">Ingeniero en Computación e Informatica</h3>
+        <p class="description-profession animate__animated animate__fadeInRight">
           Ingeniero, Desarrollador de software y Diseñador UI.
         </p>
-        <div class="rrss">
+        <div class="rrss animate__animated animate__fadeInLeft">
           <ul class="rrss_list">
             <li><i class="fa-brands fa-github icon_rrss"></i></li>
             <li><i class="fa-brands fa-instagram icon_rrss"></i></li>
             <li><i class="fa-brands fa-linkedin-in icon_rrss"></i></li>
           </ul>
         </div>
-        <a href="" class="dowloader_cv">Descargar mi CV</a>
+        <a href="" class="dowloader_cv" data-aos-delay="300" data-aos="fade-down">Descargar mi CV</a>
       </div>
-      <div class="header__bottom-right">
+      <div class="header__bottom-right animate__animated animate__fadeInRight">
         <img src="assets/img/Robotics.png" alt="" />
       </div>
 
@@ -72,10 +84,14 @@
         <i class="fa-solid fa-arrow-down icon__arrow-bottom"></i>
       </div>
     </div>
+
     <img src="assets/img/Vector.png" alt="" class="vector" />
-    <!-- <div class="test">
-      <p>s</p>
-    </div> -->
+
+    <div class="icon__downloader">
+      <div class="container__icon top">
+        <i class="fa-solid fas fa-arrow-up icon__arrow-top"></i>
+      </div>
+    </div>
   </header>
   <!-- ========= MAIN ======= -->
 
@@ -84,10 +100,10 @@
 
     <section class="about__me " id="sobre_mi">
 
-      <h4 class="name__section">Sobre mi</h4>
+      <h4 class="name__section" data-aos-delay="600" data-aos="fade-up">Sobre mi</h4>
       <figure class="about__me-description ">
-        <div class="content">
-          <span> &rdquor; </span>
+        <div class="content" data-aos-delay="200" data-aos="fade-right">
+          <span class=" comillas"> &rdquor; </span>
           <img src="assets/img/Figure.png" alt="" />
           <figcaption>
             Hola soy Francisco soto 😎, Ingeniero en computación e
@@ -110,10 +126,10 @@
 
     <!-- ========= SECTION Especializacion y Habilidades  ======= -->
     <section class="especialization" id="especializacion">
-      <h4 class="name__section">Especializacion y habilidades</h4>
+      <h4 class="name__section" data-aos-delay="400" data-aos="fade-up">Especializacion y habilidades</h4>
       <div class="main__especialization">
         <!-- LEFT -->
-        <div class="left">
+        <div class="left" data-aos-delay="300" data-aos="fade-right">
           <div class="container">
             <div class="progress-container">
               <div class="circle active-circle"></div>
@@ -130,10 +146,10 @@
             </div>
             <div class="especialization_item">
               <h3>Desarrollo de Software</h3>
-              <p>Durante mis años como profesionl he ido adquiriendo nuevas habiliades en el desarrollo y perfeccionando
+              <p>Durante mis años como profesional he ido adquiriendo nuevas habiliades en el desarrollo y
+                perfeccionando
                 otras.<br>
                 He desarrollado software sobre ambientes de backend y frontend
-
               </p>
               <img class="dev" src="assets/img/2.png" alt="">
             </div>
@@ -149,7 +165,7 @@
           </div>
         </div>
         <!-- RIGHT -->
-        <div class="habililities">
+        <div class="habililities" data-aos-delay="300" data-aos="fade-left">
           <div class="skill">
             <div class="progress-skill html"></div>
             <h4>Html</h4>
@@ -183,9 +199,9 @@
         </div>
       </div>
       <div class="tecnologies">
-        <h3 class="title__subtitle-section ">Tecnologias</h3>
+        <h3 class="title__subtitle-section">Tecnologias</h3>
 
-        <div class="container__iconos">
+        <div class="container__iconos" data-aos-delay="400" data-aos="fade-right">
           <div class="row">
             <img class="icon_tech" src="assets/img/tecnologies/wordpress.png" alt="">
             <img class="icon_tech large" src="assets/img/tecnologies/vmware.png" alt="">
@@ -229,19 +245,19 @@
 
 
     <!-- ========= SECTION EXPERIENCIA  ======= -->
-    <section class="experience " id="experience">
+    <section class="experience" id="experience">
       <h4 class="name__section">Areas de experiencia</h4>
       <div class="container__main">
         <!-- /* LEFT */ -->
 
-        <div class="left">
+        <div class="left" data-aos-delay="400" data-aos="fade-right">
           <button>
             <img src="assets/img/top.png" alt="">
           </button>
           <ul>
-            <li>Ingenieria</li>
-            <li>Desarrollo Software</li>
-            <li>Diseño UI</li>
+            <li class="lista__technology">Ingenieria</li>
+            <li class="lista__technology active__technology">Desarrollo Software</li>
+            <li class="lista__technology">Diseño UI</li>
           </ul>
           <button>
             <img src="assets/img/bottom.png" alt="">
@@ -250,7 +266,7 @@
 
         <!-- /* RIGHT */ -->
 
-        <div class="right">
+        <div class="right" data-aos-delay="300" data-aos="fade-left">
           <div class="container__proyect">
             <h3>Administracion TIC</h3>
             <span>2014</span>
@@ -356,12 +372,13 @@
           Pincha aqui
         </button>
       </div>
-      <img src="assets/img/space ship.png" alt="">
+      <img src="assets/img/space ship.png" data-aos-delay="100" data-aos="fade-right" alt="">
     </div>
-    <div class="footer__info">
+    <div class="footer__info" id="contact">
       <div class=""></div>
 
-      <div> &COPY; Todos los derechos reservados - Por Francisco Soto</div>
+      <p class="copyright"> &COPY; <span class="year">year</span> Todos los derechos reservados - Por Francisco Soto
+      </p>
       <div class="rs">
 
         <img src="assets/img/Git.png" alt="">
@@ -374,7 +391,10 @@
   </footer>
   <!-- ========= END FOOTER  ======= -->
 
-
+  <!-- SCRIPTS -->
+  <script src="assets/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="assets/main.js"></script>
   <script src="https://kit.fontawesome.com/56274993d0.js" crossorigin="anonymous"></script>
 </body>
 
