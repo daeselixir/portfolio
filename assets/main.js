@@ -307,3 +307,38 @@ new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+//EXPERIENCE LIST
+
+const next = document.querySelector(".next");
+
+const exper = document
+  .querySelector(".experience .container__main .left .list-experience")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    // console.log(e.target);
+    if (e.target.tagName === "LI") {
+      console.log("soy un li");
+      console.log(window.innerWidth > 992);
+
+      document
+        .querySelector(
+          ".experience .container__main .left .list-experience li.actives"
+        )
+        .classList.remove("actives");
+      e.target.classList.add("actives");
+
+      let targetTab = e.target.getAttribute("data-tab");
+
+      console.log(targetTab);
+      // if (targetTab) {
+      //   document
+      //     .querySelector(".experience .container__proyect.active")
+      //     .classList.remove("active");
+
+      //   document.getElementById(targetTab).classList.add("active");
+      // }
+    }
+  });
+
+// console.log(exper);

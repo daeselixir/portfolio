@@ -261,26 +261,30 @@
         <!-- /* LEFT */ -->
 
         <div class="left slider-navigation" data-aos-delay="400" data-aos="fade-right">
-          <button class="prev">
-            <img src="assets/img/top.png" alt="">
-          </button>
-          <div class="">
+
+          <div class="list-experience">
             <ul>
-              <li class="lista__technology">Ingenieria</li>
-              <li class="lista__technology active__technology">Desarrollo Software</li>
-              <li class="lista__technology">Diseño UI</li>
+              <li data-tab="ingenieria" class="lista__technology actives">Ingenieria</li>
+              <li data-tab="desarrollo" class="lista__technology ">Desarrollo Software</li>
+              <li data-tab="disenio" class="lista__technology">
+                <button class="prev">
+                  <i class="fa-regular  fas fa-arrow-left"></i>
+                </button>
+                Diseño
+                <button class="next">
+                  <i class="fa-regular fas fa-arrow-right"></i>
+                </button>
+              </li>
             </ul>
           </div>
-          <button class="next">
-            <img src="assets/img/bottom.png" alt="">
-          </button>
+
         </div>
 
         <!-- /* RIGHT */ -->
         <!-- data-aos-delay="300" data-aos="fade-left" -->
         <div class="right">
           <div class="swiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" id="ingenieria">
               <div class="container__proyect swiper-slide " data-aos="fade-up" data-aos-delay="200">
 
                 <h3>Administracion TIC</h3>
@@ -357,6 +361,97 @@
               </div>
               <div class="swiper-slide container__proyect " data-aos="fade-up" data-aos-delay="200">
                 <h3>Implementacion ERP</h3>
+                <span>2022</span>
+                <div class="list__tags">
+                  <ul>
+                    <li>Desarrollo</li>
+                    <li>Analisis</li>
+                    <li>Proyectos</li>
+                    <li>Gestion</li>
+                    <li>Implementacion</li>
+                  </ul>
+                </div>
+                <h5>Cambio de ERP</h5>
+                <p>Este proyecto implico el cambio del software financieron contable y adquiciones para la empresa.</p>
+              </div>
+            </div>
+            <div class="swiper-wrapper" id="desarrollo">
+              <div class="container__proyect swiper-slide " data-aos="fade-up" data-aos-delay="200">
+
+                <h3>Desarrollo START ----</h3>
+                <span>2014</span>
+                <div class="list__tags">
+                  <ul>
+                    <li>Tic</li>
+                    <li>Gestion</li>
+                    <li>Redes</li>
+                    <li>Lan</li>
+                    <li>Administracion</li>
+                    <li>Proyectos</li>
+                    <li>Infraestructura</li>
+                  </ul>
+                </div>
+                <h5>Administracion y gestion del departanto TIC</h5>
+                <p>Responsable de liderar y gestionar e implementar todo lo relacionado con las tecnologias de la
+                  informacion de la empresa.</p>
+
+              </div>
+              <div class="container__proyect swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                <h3>Proyecto SGpuerto</h3>
+                <span>2016</span>
+                <div class="list__tags">
+                  <ul>
+                    <li>Proyectos</li>
+                    <li>Desarrollo</li>
+                    <li>Analisis</li>
+                  </ul>
+                </div>
+                <h5>Levantamiento y analisis del nuevo software de pesaje del puerto</h5>
+                <p>Se realiza un levantamiento y an alisis de los requerimientos del
+                  puerto para luego entregar al proveedor que desarrolla el software
+                  que como fuente principal comienza desde la generacion de la operacion, pesaje de
+                  camiones,distribucion
+                  hacia bodegas internas, y trazababilidad para aduanas de chile.
+                  Adicional se crea un desarrollo web para los clientes y su visualizacion de la operacion de nave.</p>
+              </div>
+              <div class="swiper-slide container__proyect " data-aos="fade-up" data-aos-delay="200">
+                <h3>Infraestructura Virtual</h3>
+                <span>2015</span>
+                <div class="list__tags">
+                  <ul>
+                    <li>Vmware</li>
+                    <li>VeemBackup</li>
+                    <li>Infraestructura</li>
+                    <li>Host</li>
+                    <li>Datacenter</li>
+                    <li>Redes</li>
+                  </ul>
+                </div>
+                <h5>Vistualizacion Vmware</h5>
+                <p>Se crean en distintos sitios y datacenter maquinas que hospedan VMware para luego crear servidores
+                  virtuales con servidores Windows erver.Adicional se crea una maquina especifica con VeemBackup para
+                  respaldo de dichos servidores.
+                  Estas maquinas hospedan servidores web, de aplicacion de escritorio, Active directory,RDP,servidores
+                  de
+                  archivos.</p>
+              </div>
+              <div class="swiper-slide container__proyect " data-aos="fade-up" data-aos-delay="200">
+                <h3>Analisis de datos</h3>
+                <span>2022</span>
+                <div class="list__tags">
+                  <ul>
+                    <li>Desarrollo</li>
+                    <li>Analisis</li>
+                    <li>Proyectos</li>
+                    <li>Gestion</li>
+                  </ul>
+                </div>
+                <h5>Dashboard y reportes</h5>
+                <p>Crear dashboard y reportes de los movimientos de la operacion del sistema de pesaje del puerto.
+                  Con esto se obtendra en linea la generacion de los ticket, los tiempos de pesaje y sus destinos.</p>
+              </div>
+              <div class="swiper-slide container__proyect " data-aos="fade-up" data-aos-delay="200">
+                <h3>Desarrollo END</h3>
                 <span>2022</span>
                 <div class="list__tags">
                   <ul>
