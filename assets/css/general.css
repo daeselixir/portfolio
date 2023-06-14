@@ -51,8 +51,13 @@ header {
   color: #555;
 }
 
-a:hover {
-  color: var(--primary-color-2);
+/* .link:hover {
+  color: red;
+} */
+
+.link:hover {
+  color: #7e5ccc;
+  transition: all 0.3s;
 }
 
 .container {

@@ -21,16 +21,34 @@ const parrafoProyect = document.querySelector("p");
 const h3Especialization = document.querySelector(".especialization_item h3");
 const h4Especialization = document.querySelector(".skill h4");
 const headerTop = document.querySelector(".header__top");
+const nombre_title = document.querySelector(".nombre_title");
 
-// console.log(h3Especialization);
+//Active section link menu
 
-// // AOS
-// AOS.init({
-//   once: true,
-//   offset: 10,
-//   duration: 600,
-//   easing: "cubic-bezier(0.42, 0, 0.12, 1.28)",
-// });
+//TODO: Falta incorporar el link de contact , no funciona porque no es una section
+let sections = document.querySelectorAll("section");
+let navLi = document.querySelectorAll(
+  ".header .nav__center .items .list-item .link"
+);
+
+window.onscroll = function () {
+  var current = "";
+  sections.forEach((section) => {
+    let sectionTop = section.offsetTop;
+    // console.log(scrollY);
+    if (scrollY >= sectionTop - 282) {
+      current = section.getAttribute("id");
+    }
+  });
+  // console.log(current);
+  navLi.forEach((li) => {
+    li.classList.remove("activeLi");
+
+    if (li.classList.contains(current)) {
+      li.classList.add("activeLi");
+    }
+  });
+};
 
 //CUANDO RECARGA LA PAGINA
 if (window.location.reload) {
@@ -62,12 +80,6 @@ if (localStorage.getItem("darkmode") === "false") {
     .setAttribute("src", "assets/img/logo-white.png");
 }
 //end IMAGEN DE LOGO
-
-// function addClassNameSection(names) {
-//   return names.forEach((name) => {
-//     name.classList.add("darkmode");
-//   });
-// }
 
 function addClassLink(list) {
   return list.forEach((link) => {
@@ -231,12 +243,12 @@ trigger2.onclick = function () {
 
 //Fecha Actual
 let currentYear = new Date().getFullYear();
-console.log(currentYear);
+// console.log(currentYear);
 let copyrightText = document.querySelector(
   ".footer__info .copyright .year"
 ).innerHTML;
 
-console.log(copyrightText);
+// console.log(copyrightText);
 document.querySelector(".year").innerHTML = copyrightText.replace(
   "year",
   currentYear
@@ -244,13 +256,6 @@ document.querySelector(".year").innerHTML = copyrightText.replace(
 
 // AOS
 AOS.init({
-  // startEvent: "DOMContentLoaded",
-  // once: true,
-  // delay: 0,
-  // offset: 10,
-  // duration: 500,
-  // easing: "cubic-bezier(0.42, 0, 0.12, 1.28)",
-
   //Setting by defaul
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
@@ -269,4 +274,36 @@ AOS.init({
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-bottom",
+});
+
+//Swiper Slider settings
+// Portfolio slider
+var numberOfSlides = document.querySelectorAll(".swiper-slide").length;
+
+// console.log(numberOfSlides);
+new Swiper(".swiper", {
+  loop: true,
+  allowSlidePrev: numberOfSlides !== 1,
+  allowSlideNext: numberOfSlides !== 1,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    769: {
+      slidesPerView: 1,
+      spaceBetween: 32,
+    },
+    1151: {
+      slidesPerView: 1,
+      spaceBetween: 56,
+    },
+  },
+  navigation: {
+    nextEl: ".slider-navigation .next",
+    prevEl: ".slider-navigation .prev",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
 });

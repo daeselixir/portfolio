@@ -163,7 +163,7 @@ a:visited,
 
 .list-item .btn__idioma:hover {
   background-color: var(--primary-color-3);
-  color: var(--primary-color-4);
+  color: var(--gray-light-2);
 }
 
 .icon {
@@ -443,9 +443,9 @@ a:visited,
   /* display: block; */
   letter-spacing: 0.8px;
   line-height: 1.4;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   word-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 figcaption .br {
@@ -540,9 +540,7 @@ figcaption .br {
 .left .especializations {
   width: 70%;
   display: flex;
-  /* justify-content: space-evenly; */
   align-items: center;
-  /* gap: 1rem; */
 }
 
 .main__especialization .especializations {
@@ -586,7 +584,7 @@ figcaption .br {
   margin-bottom: 0.5rem;
   align-self: baseline;
   /* color: var(); */
-  color: var(--primary-color-1);
+  color: var(--primary-color-3);
   /* color: red; */
 }
 
@@ -743,7 +741,7 @@ figcaption .br {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 /* LEFT */
@@ -752,13 +750,15 @@ figcaption .br {
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .left button {
   cursor: pointer;
   border: none;
   background-color: transparent;
-  /* font-size: .5rem; */
+
   margin: 3rem;
 }
 
@@ -776,6 +776,7 @@ figcaption .br {
 }
 
 .left ul li {
+  color: var(--gray-dark-1);
   font-size: 2.6rem;
   font-weight: 600;
   list-style: none;
@@ -792,16 +793,17 @@ figcaption .br {
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  width: 50%;
-  gap: 5rem;
-  justify-content: center;
+  width: 55%;
 }
 
 .container__proyect {
+  /* border: 2px solid green; */
+
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
   justify-content: center;
+
+  gap: 0.3rem;
 }
 .container__proyect h3 {
   font-size: 2rem;
@@ -816,6 +818,7 @@ figcaption .br {
   font-size: 1rem;
   font-weight: 600;
   color: var(--gray-light-4);
+  margin-top: 0.5rem;
 }
 
 .container__proyect ul {
@@ -824,25 +827,28 @@ figcaption .br {
 }
 
 .container__proyect ul li {
-  padding: 0.5rem;
+  padding: 0.7rem;
   color: var(--primary-color-1);
   font-weight: 600;
   border-radius: 4px;
   background-color: var(--primary-color-5);
+  margin-top: 0.7rem;
   margin-bottom: 1rem;
 }
 
 .container__proyect h5 {
-  color: var(--gray-light-3);
+  color: var(--primary-color-3);
   font-size: 1.7rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .container__proyect p {
+  /* text-align: center; */
+  /* width: 100%; */
   font-size: 1.6rem;
-  font-weight: 600;
-  /* color: red; */
+  font-weight: 500;
+  color: var(--gray-dark-2);
 }
 
 /* ========= END SECTION EXPERIENCIA ======= */
@@ -851,7 +857,7 @@ figcaption .br {
 footer {
   /* border: 2px solid green; */
   background-color: var(--gray-dark-4);
-  height: 43vh;
+  height: 47vh;
   display: flex;
   /* align-items:center ; */
   justify-content: center;
@@ -1003,6 +1009,10 @@ header.darkmode {
   transition: all 0.8s;
 }
 
+.darkmode.nombre_title {
+  color: var(--primary-color-3);
+}
+
 .darkmode.title {
   color: var(--gray-light-1);
   transition: all 0.4s ease-in-out;
@@ -1079,9 +1089,9 @@ footer.darkmode {
   color: var(--gray-light-2);
 }
 
-.active__technology {
+/* .active__technology {
   color: var(--primary-color-3);
-}
+} */
 
 .darkmode.header__top {
   background-color: var(--darkmode);
@@ -1096,7 +1106,7 @@ footer.darkmode {
 .scrool {
   /* background-color: red; */
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 1px 15px 10px rgba(0, 0, 0, 0.062);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.062);
 }
 
 .subir {
@@ -1132,4 +1142,17 @@ footer.darkmode {
   50% {
     border-color: transparent;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.left .active__technology {
+  color: var(--primary-color-3);
+}
+
+.activeLi {
+  color: var(--primary-color-3) !important;
 }
