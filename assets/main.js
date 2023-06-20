@@ -310,8 +310,6 @@ new Swiper(".swiper", {
 
 //EXPERIENCE LIST
 
-const next = document.querySelector(".next");
-
 const exper = document
   .querySelector(".experience .container__main .left .list-experience")
   .addEventListener("click", function (e) {
@@ -327,18 +325,15 @@ const exper = document
         )
         .classList.remove("actives");
       e.target.classList.add("actives");
-
-      let targetTab = e.target.getAttribute("data-tab");
-
-      console.log(targetTab);
-      // if (targetTab) {
-      //   document
-      //     .querySelector(".experience .container__proyect.active")
-      //     .classList.remove("active");
-
-      //   document.getElementById(targetTab).classList.add("active");
-      // }
     }
   });
 
-// console.log(exper);
+const button = document
+  .querySelector(".prev")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (!e.target.classList.contains("enabled")) {
+      button.classList.add("enabled");
+    }
+  });

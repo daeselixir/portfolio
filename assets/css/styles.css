@@ -747,7 +747,7 @@ figcaption .br {
 
 /* LEFT */
 .experience .left {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
   height: auto;
   display: flex;
@@ -779,25 +779,16 @@ figcaption .br {
   width: 100%;
 }
 
-.left .prev {
+.prev,
+.next {
   font-size: 1.8rem;
   color: var(--gray-light-5);
-
-  /* display: none; */
-}
-
-.left .next {
-  font-size: 1.8rem;
-  color: var(--gray-light-5);
-}
-
-.left button img {
-  /* width: 3rem;
-  height: 2rem; */
-}
-
-.left button.disabled {
   display: none;
+}
+
+.enabled {
+  display: block;
+  /* background-color: red; */
 }
 
 .actives {
