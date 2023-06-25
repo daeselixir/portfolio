@@ -309,31 +309,145 @@ new Swiper(".swiper", {
 });
 
 //EXPERIENCE LIST
+let targetLI = document
+  .querySelector(".container__main .left ul li")
+  .getAttribute("data-tab");
 
-const exper = document
-  .querySelector(".experience .container__main .left .list-experience")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    // console.log(e.target);
-    if (e.target.tagName === "LI") {
-      console.log("soy un li");
-      console.log(window.innerWidth > 992);
+let cardsIng = document.getElementById("cardsIng");
+let cardsSoft = document.getElementById("cardsSoft");
 
-      document
-        .querySelector(
-          ".experience .container__main .left .list-experience li.actives"
-        )
-        .classList.remove("actives");
-      e.target.classList.add("actives");
+let cardInge = document.querySelectorAll("#cardsIng #ingenieria");
+let cardSoft = document.querySelectorAll("#cardsSoft #software");
+
+//Botones
+let btnLeftIng = document.getElementById("left1");
+let btnRightIng = document.getElementById("right1");
+
+let btnLeftSoft = document.getElementById("left2");
+let btnRightSoft = document.getElementById("right2");
+
+//EXPERIENCE LIST INITIAL
+// if (targetLI === "ingenieria") {
+let idx = 0;
+
+// document.querySelector(
+//   ".experience .container__main .right .contenido.active"
+// ).
+
+// document.getElementById(targetLI).classList.add("active");
+
+function changeCard() {
+  if (idx > cardInge.length - 1) {
+    idx = 0;
+  } else if (idx < 0) {
+    idx = cardInge.length - 1;
+  }
+
+  cardsIng.style.transform = `translateX(${-idx * 500}px)`;
+}
+btnRightIng.addEventListener("click", () => {
+  idx++;
+  changeCard();
+});
+
+btnLeftIng.addEventListener("click", () => {
+  idx--;
+  changeCard();
+});
+// }
+
+//EXPERIENCE LIST LAST
+
+document.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  let targetTab = e.target.getAttribute("data-tab");
+  console.log(targetTab);
+
+  if (e.target.tagName === "LI") {
+    document
+      .querySelector(".experience .container__main .left ul li.active")
+      .classList.remove("active");
+
+    //Buttons
+    const prev = document.querySelectorAll(
+      ".experience .container__main .left ul button.active"
+    )[0];
+    // console.log(prev);
+
+    const next = document.querySelectorAll(
+      ".experience .container__main .left ul button.active"
+    )[1];
+
+    // console.log(prev.classList.contains("active"));
+    if (prev.classList.contains("active")) {
+      prev.classList.remove("active");
+      next.classList.remove("active");
     }
-  });
 
-const button = document
-  .querySelector(".prev")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
+    e.target.classList.add("active");
+    e.target.children[0].classList.add("active");
+    e.target.children[1].classList.add("active");
+  }
 
-    if (!e.target.classList.contains("enabled")) {
-      button.classList.add("enabled");
+  if (targetTab === "ingenieria") {
+    let idxi = 0;
+
+    document
+      .querySelector(".experience .container__main .right .contenido.active")
+      .classList.remove("active");
+    document.getElementById(targetTab).classList.add("active");
+
+    function changeCard() {
+      if (idxi > cardInge.length - 1) {
+        idxi = 0;
+      } else if (idxi < 0) {
+        idxi = cardInge.length - 1;
+      }
+
+      cardsIng.style.transform = `translateX(${-idxi * 500}px)`;
     }
-  });
+    btnRightIng.addEventListener("click", () => {
+      idxi++;
+      changeCard();
+    });
+
+    btnLeftIng.addEventListener("click", () => {
+      idxi--;
+      changeCard();
+    });
+  }
+
+  if (targetTab === "software") {
+    // console.log(targetTab);
+    let idxs = 0;
+
+    // console.log(targetTab);
+
+    document
+      .querySelector(".experience .container__main .right .contenido.active")
+      .classList.remove("active");
+
+    document.getElementById(targetTab).classList.add("active");
+
+    function changeCard() {
+      if (idxs > cardSoft.length - 1) {
+        idxs = 0;
+      } else if (idxs < 0) {
+        idxs = cardSoft.length - 1;
+      }
+
+      cardsSoft.style.transform = `translateX(${-idxs * 500}px)`;
+    }
+
+    btnRightSoft.addEventListener("click", () => {
+      idxs++;
+      changeCard();
+    });
+
+    btnLeftSoft.addEventListener("click", () => {
+      idxs--;
+      changeCard();
+    });
+  }
+});
