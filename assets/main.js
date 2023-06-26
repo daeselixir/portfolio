@@ -308,16 +308,18 @@ new Swiper(".swiper", {
   },
 });
 
-//EXPERIENCE LIST
+//----------------------------- EXPERIENCE LIST
 let targetLI = document
   .querySelector(".container__main .left ul li")
   .getAttribute("data-tab");
 
 let cardsIng = document.getElementById("cardsIng");
 let cardsSoft = document.getElementById("cardsSoft");
+let cardsDiseno = document.getElementById("cardsDiseno");
 
 let cardInge = document.querySelectorAll("#cardsIng #ingenieria");
 let cardSoft = document.querySelectorAll("#cardsSoft #software");
+let cardDiseno = document.querySelectorAll("#cardsDiseno #diseno");
 
 //Botones
 let btnLeftIng = document.getElementById("left1");
@@ -325,6 +327,9 @@ let btnRightIng = document.getElementById("right1");
 
 let btnLeftSoft = document.getElementById("left2");
 let btnRightSoft = document.getElementById("right2");
+
+let btnLeftDis = document.getElementById("left3");
+let btnRightDis = document.getElementById("right3");
 
 //EXPERIENCE LIST INITIAL
 // if (targetLI === "ingenieria") {
@@ -417,10 +422,11 @@ document.addEventListener("click", function (e) {
       changeCard();
     });
   }
+  let idxs = 0;
 
   if (targetTab === "software") {
     // console.log(targetTab);
-    let idxs = 0;
+    // let idxs = 0;
 
     // console.log(targetTab);
 
@@ -447,6 +453,37 @@ document.addEventListener("click", function (e) {
 
     btnLeftSoft.addEventListener("click", () => {
       idxs--;
+      changeCard();
+    });
+  }
+  let idxd = 0;
+
+  if (targetTab === "diseno") {
+    // let idxd = 0;
+    console.log(idxs)
+
+    document
+      .querySelector(".experience .container__main .right .contenido.active")
+      .classList.remove("active");
+
+    document.getElementById(targetTab).classList.add("active");
+
+    function changeCard() {
+      if (idxd > cardDiseno.length - 1) {
+        idxd = 0;
+      } else if (idxd < 0) {
+        idxd = cardDiseno.length - 1;
+      }
+      cardsDiseno.style.transform = `translateX(${-idxd * 500}px)`;
+    }
+
+    btnRightDis.addEventListener("click", () => {
+      idxd++;
+      changeCard();
+    });
+
+    btnLeftDis.addEventListener("click", () => {
+      idxd--;
       changeCard();
     });
   }

@@ -471,7 +471,7 @@ figcaption .br {
   /* justify-content: space-between; */
   flex-direction: row;
   gap: 1rem;
-  height: 80vh;
+  height: 70vh;
   width: 50%;
   margin-left: 4rem;
   overflow: hidden;
@@ -677,10 +677,10 @@ figcaption .br {
 
 /* TECNOLOGIAS */
 .tecnologies {
-  margin-top: 8rem;
+  margin-top: 2rem;
   /* border: 2px solid red; */
   text-align: center;
-  height: 50vh;
+  height: 35vh;
 }
 
 .row {
@@ -690,11 +690,6 @@ figcaption .br {
   align-items: center;
   gap: 5rem;
   /* border: 2px solid green; */
-}
-
-.row:last-child {
-  /* border: 1px solid red;
-  margin-bottom: 15rem; */
 }
 
 .icon_tech {
@@ -1183,24 +1178,24 @@ footer.darkmode {
   /* border-radius: 15px; */
   /* box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1); */
   min-width: 500px;
-  height: 550px;
+  height: 600px;
   /* opacity: 0; */
 
   padding: 1.5rem 0.6rem 1.5rem 0.7rem;
 }
 
-.list-item {
+.list-item-exp {
   width: 100%;
   height: 4rem;
   /* border: 1px solid red; */
   transition: all 0.4s;
 }
 
-.list-item:hover {
+.list-item-exp:hover {
   color: var(--primary-color-3);
 }
 
-.list-item.active {
+.list-item-exp.active {
   color: var(--primary-color-3);
 }
 
