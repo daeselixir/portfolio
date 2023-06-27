@@ -10,7 +10,8 @@
   --dark-color-3: #383838;
   --darkmode: #1f1e24;
 
-  --gray-light-1: #f5f5f5;
+  --gray-light-1: #f2f5f9;
+  /* --gray-light-1: #f5f5f5; */
   --gray-light-2: #e0e0e0;
   --gray-light-3: #cccccc;
   --gray-light-4: #b8b8b8;
@@ -680,7 +681,7 @@ figcaption .br {
   margin-top: 2rem;
   /* border: 2px solid red; */
   text-align: center;
-  height: 35vh;
+  height: 45vh;
 }
 
 .row {
@@ -1114,7 +1115,7 @@ footer.darkmode {
 }
 
 .experience {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background-color: var(--gray-light-1);
 
   margin-bottom: 5rem;

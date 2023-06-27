@@ -59,7 +59,7 @@ if (window.location.reload) {
 if (localStorage.getItem("darkmode") === "false") {
   document
     .querySelector(".vector")
-    .setAttribute("src", "assets/img/Vector.png");
+    .setAttribute("src", "assets/img/Vector-primary.png");
 } else if (localStorage.getItem("darkmode") === "true") {
   document
     .querySelector(".vector")
@@ -121,7 +121,7 @@ btnDarkMode.addEventListener("click", function (e) {
   } else if (localStorage.getItem("darkmode") === "true") {
     document
       .querySelector(".vector")
-      .setAttribute("src", "assets/img/Vector.png");
+      .setAttribute("src", "assets/img/Vector-primary.png");
   }
 
   addClassLink(listItem);
@@ -367,7 +367,7 @@ document.addEventListener("click", function (e) {
   e.preventDefault();
 
   let targetTab = e.target.getAttribute("data-tab");
-  console.log(targetTab);
+  // console.log(targetTab);
 
   if (e.target.tagName === "LI") {
     document
@@ -460,7 +460,7 @@ document.addEventListener("click", function (e) {
 
   if (targetTab === "diseno") {
     // let idxd = 0;
-    console.log(idxs)
+    // console.log(idxs);
 
     document
       .querySelector(".experience .container__main .right .contenido.active")
