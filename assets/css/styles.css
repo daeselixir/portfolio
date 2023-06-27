@@ -814,10 +814,10 @@ figcaption .br {
 footer {
   /* border: 2px solid green; */
   background-color: var(--gray-dark-4);
-  height: 47vh;
+  height: 37vh;
   display: flex;
-  /* align-items:center ; */
-  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
   position: relative;
 }
 
@@ -875,6 +875,10 @@ footer {
 
   transition: all 0.5s;
 }
+.darkmode .information__aditional .btn {
+  background-color: var(--primary-color-4);
+  color: var(--primary-color-1);
+}
 
 .information__aditional .btn:hover {
   background-color: var(--primary-color-3);
@@ -893,7 +897,7 @@ footer {
   content: "";
   position: absolute;
   top: -35px;
-  width: 60%;
+  width: 100%;
   height: 1px;
   background-color: var(--gray-light-5);
 }
@@ -907,9 +911,9 @@ footer {
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 4rem;
-  padding-bottom: 2rem;
+  justify-content: space-between;
+  /* gap: 5rem; */
+  padding: 0 0rem 1rem 0rem;
 }
 
 .footer__info div {
@@ -918,18 +922,18 @@ footer {
   color: var(--gray-light-3);
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .footer__info .rs {
   cursor: pointer;
-  color: #a3a3a3;
+  color: var(--primary-color-3);
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1rem; */
 }
 
 .footer__info .rs img {
@@ -938,14 +942,28 @@ footer {
 }
 
 .copyright {
+  flex: 1;
+  width: 100%;
+  /* align-self: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--gray-light-4);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .fa-moon:before {
   color: #7e5ccc;
   font-size: 3rem;
   cursor: pointer;
+}
+
+.desarrolladoByTech p {
+  width: 30rem;
+  /* width: 290px;
+  color: var(--gray-light-4);
+  font-size: 1.4rem; */
+  /* text-align: center; */
 }
 
 /* ========= END FOOTER ======= */
@@ -1192,7 +1210,15 @@ footer.darkmode {
   transition: all 0.4s;
 }
 
+.darkmode .list-item-exp {
+  color: var(--gray-light-1);
+}
+
 .list-item-exp:hover {
+  color: var(--primary-color-3);
+}
+
+.darkmode .list-item-exp:hover {
   color: var(--primary-color-3);
 }
 
@@ -1207,7 +1233,7 @@ button {
   margin: 0 1rem 0 1rem;
   padding: 1rem;
   font-size: 0.9rem;
-  /* color: #103038; */
+
   font-weight: 500;
   border: none;
   transition: all 0.4s;
@@ -1219,7 +1245,17 @@ button {
   align-items: center;
 }
 
+.darkmode button {
+  background-color: var(--primary-color-1);
+  color: var(--gray-light-1);
+}
+
 button:hover {
+  background-color: var(--primary-color-3);
+  color: var(--white);
+}
+
+.darkmode button:hover {
   background-color: var(--primary-color-3);
   color: var(--white);
 }
@@ -1259,10 +1295,19 @@ button.active {
   gap: 0.6rem;
 }
 
+.darkmode .item-card .item {
+  background-color: var(--primary-color-3);
+  color: var(--gray-light-1);
+}
+
 .item p {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--gray-dark-2);
+}
+
+.darkmode .item p {
+  color: var(--gray-light-1);
 }
 
 .item h5 {
@@ -1272,6 +1317,10 @@ button.active {
   font-weight: 600;
 }
 
+.darkmode .item h5 {
+  color: var(--gray-light-1);
+}
+
 .item .datespan {
   font-size: 1.2rem;
   color: var(--gray-light-4);
@@ -1279,8 +1328,14 @@ button.active {
 }
 
 .item .tags {
+  margin-bottom: 1rem;
   display: flex;
   gap: 1rem;
+}
+
+.darkmode .item .tags span {
+  background-color: var(--primary-color-1);
+  color: var(--gray-light-1);
 }
 
 .item .tags span {
@@ -1294,4 +1349,8 @@ button.active {
 .item h1 {
   font-size: 1.8rem;
   color: #555;
+}
+
+.darkmode .item h1 {
+  color: var(--gray-light-1);
 }

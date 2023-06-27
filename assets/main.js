@@ -22,6 +22,7 @@ const h3Especialization = document.querySelector(".especialization_item h3");
 const h4Especialization = document.querySelector(".skill h4");
 const headerTop = document.querySelector(".header__top");
 const nombre_title = document.querySelector(".nombre_title");
+const itemCard = document.querySelectorAll(".item");
 
 //Active section link menu
 
@@ -87,6 +88,12 @@ function addClassLink(list) {
   });
 }
 
+function addClassItem(list) {
+  return list.forEach((item) => {
+    item.classList.toggle("darkmode");
+  });
+}
+
 load();
 
 btnDarkMode.addEventListener("click", function (e) {
@@ -98,6 +105,9 @@ btnDarkMode.addEventListener("click", function (e) {
   descriptionProfession.classList.toggle("darkmode");
   faMoon.classList.toggle("darkmode");
   headerTop.classList.toggle("darkmode");
+  // itemCard.classList.toggle("darkmode");
+
+  // console.log(itemCard);
   if (localStorage.getItem("darkmode") === "false") {
     document
       .querySelector(".img_logo")
@@ -125,6 +135,7 @@ btnDarkMode.addEventListener("click", function (e) {
   }
 
   addClassLink(listItem);
+  addClassItem(itemCard);
   // listItem.classList.toggle("darkmode");
   aboutMe.classList.toggle("darkmode");
   content.classList.toggle("darkmode");
@@ -133,7 +144,7 @@ btnDarkMode.addEventListener("click", function (e) {
   store(body.classList.contains("darkmode"));
   experience.classList.toggle("darkmode");
   footer.classList.toggle("darkmode");
-  h3ContainerProyect.classList.toggle("darkmode");
+  // h3ContainerProyect.classList.toggle("darkmode");
   parrafoProyect.classList.toggle("darkmode");
   nameSection.classList.toggle("darkmode");
   h4Especialization.classList.toggle("darkmode");
@@ -154,7 +165,7 @@ function load() {
     faMoon.classList.add("darkmode");
     // listItem.classList.add("darkmode");
     addClassLink(listItem);
-
+    addClassLink(itemCard);
     aboutMe.classList.add("darkmode");
     content.classList.add("darkmode");
     figcation.classList.add("darkmode");
@@ -198,6 +209,16 @@ document
         behavior: "smooth",
         block: "start",
       });
+    });
+  });
+
+const btnArrowDown = document
+  .querySelector(".btn-down")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
   });
 
