@@ -134,6 +134,10 @@
   height: 4rem;
 }
 
+.list-item {
+  /* border: 1px solid red; */
+}
+
 .list-item .btn__idioma {
   padding: 1rem;
   color: var(--primary-color-2);
@@ -814,7 +818,7 @@ figcaption .br {
 footer {
   /* border: 2px solid green; */
   background-color: var(--gray-dark-4);
-  height: 37vh;
+  height: 47vh;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -823,7 +827,7 @@ footer {
 
 .space {
   position: absolute;
-  top: -10rem;
+  top: -5rem;
   /* border: 1px solid gold; */
   width: 100%;
   height: 60%;
@@ -847,6 +851,7 @@ footer {
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
   /* position: relative; */
 }
@@ -862,6 +867,7 @@ footer {
 }
 
 .information__aditional .btn {
+  /* border: 1px solid green; */
   margin-top: 1.5rem;
   align-self: center;
   cursor: pointer;
@@ -887,10 +893,12 @@ footer {
 
 .space img {
   /* border: 1px solid gold; */
-
+  width: 33%;
   position: absolute;
   top: -6rem;
   right: 0;
+
+  z-index: 10;
 }
 
 .footer__info::before {
@@ -913,7 +921,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   /* gap: 5rem; */
-  padding: 0 0rem 1rem 0rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .footer__info div {
@@ -930,10 +938,10 @@ footer {
   cursor: pointer;
   color: var(--primary-color-3);
 
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; */
+  gap: 1rem;
 }
 
 .footer__info .rs img {
@@ -1136,7 +1144,7 @@ footer.darkmode {
   /* border: 2px solid red; */
   background-color: var(--gray-light-1);
 
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   /* padding: 2rem; */
 
   display: flex;

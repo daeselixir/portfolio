@@ -384,7 +384,7 @@ btnLeftIng.addEventListener("click", () => {
 
 //EXPERIENCE LIST LAST
 
-document.addEventListener("click", function (e) {
+document.querySelector(".experience").addEventListener("click", function (e) {
   e.preventDefault();
 
   let targetTab = e.target.getAttribute("data-tab");
