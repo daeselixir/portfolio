@@ -143,7 +143,7 @@ btnDarkMode.addEventListener("click", function (e) {
   comillas.classList.toggle("darkmode");
   store(body.classList.contains("darkmode"));
   experience.classList.toggle("darkmode");
-  footer.classList.toggle("darkmode");
+  // footer.classList.toggle("darkmode");
   // h3ContainerProyect.classList.toggle("darkmode");
   parrafoProyect.classList.toggle("darkmode");
   nameSection.classList.toggle("darkmode");
@@ -171,7 +171,7 @@ function load() {
     figcation.classList.add("darkmode");
     comillas.classList.add("darkmode");
     experience.classList.add("darkmode");
-    footer.classList.add("darkmode");
+    // footer.classList.add("darkmode");
     h3ContainerProyect.classList.add("darkmode");
     parrafoProyect.classList.add("darkmode");
     h4Especialization.classList.add("darkmode");
@@ -262,18 +262,18 @@ trigger2.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-//Fecha Actual
-let currentYear = new Date().getFullYear();
-// console.log(currentYear);
-let copyrightText = document.querySelector(
-  ".footer__info .copyright .year"
-).innerHTML;
+// //Fecha Actual
+// let currentYear = new Date().getFullYear();
+// // console.log(currentYear);
+// let copyrightText = document.querySelector(
+//   ".footer__info .copyright .year"
+// ).innerHTML;
 
-// console.log(copyrightText);
-document.querySelector(".year").innerHTML = copyrightText.replace(
-  "year",
-  currentYear
-);
+// // console.log(copyrightText);
+// document.querySelector(".year").innerHTML = copyrightText.replace(
+//   "year",
+//   currentYear
+// );
 
 // AOS
 AOS.init({
