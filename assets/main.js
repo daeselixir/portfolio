@@ -1,4 +1,6 @@
 const btnDarkMode = document.querySelector("#btnDarkmode");
+const btnLightMode = document.querySelector("#btnLightMode");
+
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const title = document.querySelector(".title");
@@ -23,6 +25,10 @@ const h4Especialization = document.querySelector(".skill h4");
 const headerTop = document.querySelector(".header__top");
 const nombre_title = document.querySelector(".nombre_title");
 const itemCard = document.querySelectorAll(".item");
+
+// btns
+const btnMoon = document.querySelector(".moon");
+const btnSun = document.querySelector(".sun");
 
 //Active section link menu
 
@@ -97,6 +103,9 @@ function addClassItem(list) {
 load();
 
 btnDarkMode.addEventListener("click", function (e) {
+  btnMoon.style.display = "none";
+  btnSun.style.display = "block";
+
   body.classList.toggle("darkmode");
   title.classList.toggle("darkmode");
   header.classList.toggle("darkmode");
@@ -145,6 +154,62 @@ btnDarkMode.addEventListener("click", function (e) {
   experience.classList.toggle("darkmode");
   // footer.classList.toggle("darkmode");
   // h3ContainerProyect.classList.toggle("darkmode");
+  parrafoProyect.classList.toggle("darkmode");
+  nameSection.classList.toggle("darkmode");
+  h4Especialization.classList.toggle("darkmode");
+});
+
+btnLightMode.addEventListener("click", function (e) {
+  btnMoon.style.display = "block";
+  btnSun.style.display = "none";
+
+  body.classList.toggle("darkmode");
+  title.classList.toggle("darkmode");
+  header.classList.toggle("darkmode");
+  spanNombre.classList.toggle("darkmode");
+  profession.classList.toggle("darkmode");
+  descriptionProfession.classList.toggle("darkmode");
+  faMoon.classList.toggle("darkmode");
+  headerTop.classList.toggle("darkmode");
+  // itemCard.classList.toggle("darkmode");
+
+  // console.log(itemCard);
+  if (localStorage.getItem("darkmode") === "false") {
+    document
+      .querySelector(".img_logo")
+      .setAttribute("src", "assets/img/logo-white.png");
+    //TODO : Probando sacando el vector en modo oscuro
+    document.querySelector(".vector").setAttribute("style", "display:none");
+  } else if (localStorage.getItem("darkmode") === "true") {
+    document.querySelector(".vector").setAttribute("style", "display:block");
+    document
+      .querySelector(".img_logo")
+      .setAttribute("src", "assets/img/logo.png");
+    //TODO : Probando sacando el vector en modo oscuro
+
+    document
+      .querySelector(".vector")
+      .setAttribute("src", "assets/img/Vector-2.png");
+  }
+
+  if (localStorage.getItem("darkmode") === "false") {
+    document.querySelector(".vector").setAttribute("style", "display:none");
+  } else if (localStorage.getItem("darkmode") === "true") {
+    document
+      .querySelector(".vector")
+      .setAttribute("src", "assets/img/Vector-primary.png");
+  }
+
+  addClassLink(listItem);
+  addClassItem(itemCard);
+
+  aboutMe.classList.toggle("darkmode");
+  content.classList.toggle("darkmode");
+  figcation.classList.toggle("darkmode");
+  comillas.classList.toggle("darkmode");
+  store(body.classList.contains("darkmode"));
+  experience.classList.toggle("darkmode");
+
   parrafoProyect.classList.toggle("darkmode");
   nameSection.classList.toggle("darkmode");
   h4Especialization.classList.toggle("darkmode");
@@ -262,18 +327,16 @@ trigger2.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-// //Fecha Actual
-// let currentYear = new Date().getFullYear();
-// // console.log(currentYear);
-// let copyrightText = document.querySelector(
-//   ".footer__info .copyright .year"
-// ).innerHTML;
+//Fecha Actual
+let currentYear = new Date().getFullYear();
+// console.log(currentYear);
+let copyrightText = document.querySelector("footer .copyr .year").innerHTML;
 
-// // console.log(copyrightText);
-// document.querySelector(".year").innerHTML = copyrightText.replace(
-//   "year",
-//   currentYear
-// );
+// console.log(copyrightText);
+document.querySelector(".year").innerHTML = copyrightText.replace(
+  "year",
+  currentYear
+);
 
 // AOS
 AOS.init({

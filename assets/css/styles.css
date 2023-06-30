@@ -167,7 +167,7 @@
 .header__bottom {
   /* position: relative; */
 
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 50vh;
   display: flex;
   align-items: center;
@@ -462,6 +462,7 @@ figcaption .br {
 .main__especialization {
   /* border: 1px solid red; */
   height: 100%;
+  /* padding: 2rem; */
 
   display: flex;
   /* justify-content: space-around; */
@@ -599,7 +600,7 @@ figcaption .br {
 
 .habililities {
   /* border: 1px solid red; */
-  width: 40%;
+  width: 35%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -816,7 +817,7 @@ figcaption .br {
 
 /* ========= FOOTER ======= */
 footer {
-  border: 4px solid green;
+  /* border: 4px solid green; */
   background-color: var(--gray-dark-4);
   /* width: 90vw; */
   height: 47vh;
@@ -825,7 +826,7 @@ footer {
   align-items: end;
   justify-content: space-between;
   /* gap: 2; */
-  /* position: relative; */
+  position: relative;
   padding: 1rem;
 }
 
@@ -965,6 +966,19 @@ footer {
 .fa-moon:before {
   color: #7e5ccc;
   font-size: 3rem;
+  cursor: pointer;
+}
+
+.sun {
+  display: none;
+  color: #7e5ccc;
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+
+.list-item .sun .fa-sun:before {
+  color: #7e5ccc;
+  font-size: 2.7rem;
   cursor: pointer;
 }
 
@@ -1162,7 +1176,7 @@ footer.darkmode {
 }
 
 .left {
-  width: 50%;
+  width: 40%;
 }
 
 .experience .contenido {
@@ -1375,17 +1389,74 @@ footer .developers,
 footer .copyr,
 footer .redes_sociales {
   width: calc(100% / 3);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 0.8rem;
 }
 
 footer .developers p,
 footer .copyr p {
   text-align: center;
   font-size: 1.4rem;
-  color: var(--white);
+  color: var(--gray-light-5);
+}
+
+footer .redes_sociales img {
+  width: 25px;
+}
+
+.darkmode footer {
+  background-color: var(--darkmode);
+}
+
+.superposicion {
+  border-radius: 1rem;
+  position: absolute;
+  background-color: var(--primary-color-3);
+  width: 70%;
+  height: 250px;
+  top: -35px;
+
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.superposicion .enlace {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  position: relative;
+}
+
+.superposicion .enlace p {
+  color: var(--gray-light-2);
+  font-size: 3rem;
+}
+
+.superposicion .enlace a {
+  color: var(--gray-light-3);
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.superposicion .enlace a:hover {
+  color: var(--gray-light-1);
+  transform: scale(1.3);
+}
+
+.superposicion img {
+  position: absolute;
+  width: 300px;
+  right: -6rem;
+  top: 4rem;
 }
