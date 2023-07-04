@@ -449,7 +449,6 @@ btnLeftIng.addEventListener("click", () => {
 
 document.querySelector(".experience").addEventListener("click", function (e) {
   e.preventDefault();
-
   let targetTab = e.target.getAttribute("data-tab");
   // console.log(targetTab);
 
@@ -462,6 +461,7 @@ document.querySelector(".experience").addEventListener("click", function (e) {
     const prev = document.querySelectorAll(
       ".experience .container__main .left ul button.active"
     )[0];
+
     // console.log(prev);
 
     const next = document.querySelectorAll(
@@ -473,7 +473,6 @@ document.querySelector(".experience").addEventListener("click", function (e) {
       prev.classList.remove("active");
       next.classList.remove("active");
     }
-
     e.target.classList.add("active");
     e.target.children[0].classList.add("active");
     e.target.children[1].classList.add("active");
