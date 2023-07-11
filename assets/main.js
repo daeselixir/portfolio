@@ -432,7 +432,7 @@ function changeCard() {
     idx = cardInge.length - 1;
   }
 
-  cardsIng.style.transform = `translateX(${-idx * 500}px)`;
+  cardsIng.style.transform = `translateX(${-idx * 400}px)`;
 }
 btnRightIng.addEventListener("click", () => {
   idx++;
@@ -493,7 +493,7 @@ document.querySelector(".experience").addEventListener("click", function (e) {
         idxi = cardInge.length - 1;
       }
 
-      cardsIng.style.transform = `translateX(${-idxi * 500}px)`;
+      cardsIng.style.transform = `translateX(${-idxi * 400}px)`;
     }
     btnRightIng.addEventListener("click", () => {
       idxi++;
@@ -526,7 +526,7 @@ document.querySelector(".experience").addEventListener("click", function (e) {
         idxs = cardSoft.length - 1;
       }
 
-      cardsSoft.style.transform = `translateX(${-idxs * 500}px)`;
+      cardsSoft.style.transform = `translateX(${-idxs * 400}px)`;
     }
 
     btnRightSoft.addEventListener("click", () => {
@@ -557,7 +557,7 @@ document.querySelector(".experience").addEventListener("click", function (e) {
       } else if (idxd < 0) {
         idxd = cardDiseno.length - 1;
       }
-      cardsDiseno.style.transform = `translateX(${-idxd * 500}px)`;
+      cardsDiseno.style.transform = `translateX(${-idxd * 400}px)`;
     }
 
     btnRightDis.addEventListener("click", () => {
