@@ -1,646 +1,1008 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="assets/img/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <link href="assets/css/aos.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
 
-  <link href="assets/css/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/general.css" />
-  <link rel="stylesheet" href="assets/css/normalize.css" />
+        <link rel="stylesheet" href="assets/css/general.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/queries.css" />
+        <title>Portfolio | Fsoto 🚀</title>
+    </head>
 
-  <title>Portfolio Website | Francisco Soto 🚀 </title>
-</head>
+    <body>
+        <!-- ========= HEADER  ======= -->
 
-<body>
-  <header class="header" id="header">
-    <div class="header__top">
-      <div class="logo">
-        <img class="img_logo" src="" alt="" id="logoBawual" />
-      </div>
-      <nav class="nav__center">
-        <ul class="items">
-          <li class="list-item">
-            <a class="sobre_mi link" href="#sobre_mi">Sobre mi</a>
-          </li>
-          <li class="list-item">
-            <a class="especializacion link" href="#especializacion">Especialización y habilidades</a>
-          </li>
-          <li class="list-item">
-            <a class="experiences link" href="#experiences">Areas de Expereriencia</a>
-          </li>
-          <li class="list-item">
-            <a class="contact link activeLi" href="#contact">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="nav__right">
-        <ul class="items">
-          <li class="list-item moon">
-            <i class="fa-regular fa-moon" id="btnDarkmode"></i>
-          </li>
-          <li class="list-item sun">
-            <i class="fa-regular fa-sun" id="btnLightMode"></i>
-          </li>
+        <header class="header" id="header">
+            <!-- ========= HEADER TOP ======= -->
+            <div class="header__top blurred padding-x-md">
+                <div class="logo" data-aos-delay="400" data-aos="fade-right">
+                    <img
+                        class="img_logo"
+                        src="assets/img/logo.png"
+                        alt="logoBawual"
+                    />
+                </div>
 
-          <li class="list-item">
-            <a href="#" class="btn__idioma">Inglés</a>
+                <nav
+                    class="nav__center"
+                    data-aos-delay="600"
+                    data-aos="fade-bottom"
+                >
+                    <ul class="items">
+                        <li class="list-item">
+                            <a class="link" href="#about-me">Sobre mi</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="#especializacion"
+                                >Especialización y habilidades</a
+                            >
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="#experiences"
+                                >Areas de Expereriencia</a
+                            >
+                        </li>
+                        <li class="list-item">
+                            <a class="link activeLi" href="#contact"
+                                >Contacto</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
 
-          </li>
-          <i class="fa-solid fa-bars"></i>
-        </ul>
-      </nav>
-    </div>
-    <!-- ========= HEADER BOTTOM ======= -->
-    <!-- <span class="line"></span> -->
+                <nav class="nav__right">
+                    <ul class="items-right">
+                        <li class="list-item moon">
+                            <i class="fa-regular fa-moon" id="btnDarkmode"></i>
+                        </li>
+                        <li class="list-item sun">
+                            <i class="fa-regular fa-sun" id="btnLightMode"></i>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="btn__idioma">Inglés</a>
+                        </li>
+                    </ul>
+                </nav>
 
-    <div class="header__bottom" id="header__bottom" data-aos-delay="300" data-aos="fade-down">
-      <div class="header__bottom-left">
-        <div class="line"></div>
-        <h1 class="title">
-          Hola!<i class="hand">👋</i>, mi
-          <p class="nombre_title">nombre</p>
-          es
-          <span class="effect_machine"> Francisco Soto.</span>
-        </h1>
-        <h3 class="profession animate__animated animate__fadeInLeft">
-          Ingeniero en Computación e Informatica
-        </h3>
-        <p class="description-profession animate__animated animate__fadeInRight">
-          Ingeniero, Desarrollador de software y Diseñador UI.
-        </p>
-        <div class="rrss animate__animated animate__fadeInLeft">
-          <ul class="rrss_list">
-            <li><i class="fa-brands fa-github icon_rrss"></i></li>
-            <li><i class="fa-brands fa-instagram icon_rrss"></i></li>
-            <li><i class="fa-brands fa-linkedin-in icon_rrss"></i></li>
-          </ul>
-        </div>
-        <a href="/assets/CV-Español.pdf" target="_blank" class="dowloader_cv" data-aos-delay="300"
-          data-aos="fade-down">Descargar mi CV</a>
-      </div>
-      <div class="header__bottom-right animate__animated animate__fadeInRight">
-        <img src="assets/img/Robotics.png" alt="" />
-      </div>
-    </div>
-    <!-- ========= END HEADER BOTTOM ======= -->
-    <div class="icon__downloader">
-      <div class="container__icon">
-        <a class="btn-down" href="#sobre_mi">
-          <i class="fa-solid fa-arrow-down icon__arrow-bottom"></i>
-        </a>
-      </div>
-    </div>
-
-    <img src="assets/img/Vector-primary.png" alt="" class="vector" />
-
-    <div class="icon__downloader">
-      <div class="container__icon top">
-        <i class="fa-solid fas fa-arrow-up icon__arrow-top"></i>
-      </div>
-    </div>
-  </header>
-  <!-- ========= MAIN ======= -->
-
-  <main>
-    <!-- ========= SECTION ABOT ME ======= -->
-
-    <section class="about__me" id="sobre_mi" data-aos-delay="300" data-aos="fade-down">
-      <h4 class="name__section" data-aos-delay="100" data-aos="fade-down">
-        Sobre mi
-      </h4>
-      <figure class="about__me-description" data-aos-delay="300" data-aos="fade-right">
-        <div class="content">
-          <span class="comillas"> &rdquor; </span>
-          <img src="assets/img/Figure.png" alt="" />
-          <figcaption>
-            Hola soy <i>Francisco soto</i> 😎, Ingeniero en computación e
-            informática, Desarrollador y Diseñador UI. Soy un apasionado delmain__ese
-            mundo de las tecnologías, pero sobre todo un creador. Después de
-            graduarme de la universidad con el título de Ingeniero en
-            computación.Mis comienzos fueron en el mundo del desarrollo de
-            software y el diseño de aplicaciones.
-            <br class="br" />
-            Ahora tengo más de 10 años en distintas áreas dentro del campo de
-            las tecnologías de la información que han fortalecido mis
-            habilidades profesionales. Mi experiencia laboral va desde
-            levantar infraestructura hasta el desarrollo mismo del software.
-            🚀
-          </figcaption>
-        </div>
-      </figure>
-    </section>
-    <!-- ========= END SECTION ABOT ME ======= -->
-
-    <!-- ========= SECTION Especializacion y Habilidades  ======= -->
-    <section class="especialization" id="especializacion">
-      <h4 class="name__section" data-aos-delay="300" data-aos="fade-down">
-        Especializacion y habilidades
-      </h4>
-      <div class="main__especialization">
-        <!-- LEFT -->
-        <div class="left" data-aos-delay="300" data-aos="fade-right">
-          <div class="container">
-            <div class="progress-container">
-              <div class="circle active-circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
+                <button class="btn-mobile-nav">
+                    <i
+                        class="icon-mobile-nav fa-solid fa-bars"
+                        name="menu-outline"
+                    ></i>
+                    <i
+                        class="icon-mobile-nav fa-solid fa-xmark"
+                        name="close-outline"
+                    ></i>
+                </button>
             </div>
-          </div>
-          <div class="especializations" data-aos-delay="200" data-aos="fade-down">
-            <div class="especialization_item">
-              <h3>Ingeniero en computación he Informatica</h3>
-              <p>
-                He trabajado como encargado de tecnologias de la información
-                tomando roles de administrador de sistemas e infraestructura
-              </p>
-              <img src="assets/img/1.png" alt="" />
+        </header>
+        <!-- ========= END HEADER  ======= -->
+        <!-- ========= MAIN  ======= -->
+        <main>
+            <!-- ========= HERO  ======= -->
+            <div class="hero padding-x-md margin-top-xl" id="hero">
+                <div class="hero__top">
+                    <div
+                        class="hero-left"
+                        data-aos-delay="200"
+                        data-aos="fade-right"
+                    >
+                        <h1 class="title">
+                            Hola! <i class="hand">👋</i>,<br />
+                            mi <span class="name__title">nombre</span> es<span
+                                class="effect-machine"
+                            >
+                                Francisco Soto</span
+                            >
+                        </h1>
+                        <h3
+                            class="profession animate__animated animate__fadeInLeft"
+                        >
+                            Ingeniero en computación e Informatica
+                        </h3>
+                        <p
+                            class="description-profession animate__animated animate__fadeInRight"
+                        >
+                            Ingeniero, Desarrollador de software y Diseñador UI.
+                        </p>
+                        <div class="rrss-icons">
+                            <ul class="rrss-lists">
+                                <li>
+                                    <a
+                                        href="https://github.com/daeselixir"
+                                        target="_blank"
+                                        ><i
+                                            class="fa-brands fa-github icon-rrss"
+                                        ></i
+                                    ></a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/franciscosotoh/"
+                                        target="_blank"
+                                    >
+                                        <i
+                                            class="fa-brands fa-linkedin icon-rrss"
+                                        ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a
+                            class="dowloader_cv center-text animate__animated animate__fadeInRight"
+                            href="/assets/CV-Español.pdf"
+                            target="_blank"
+                            >Descargar mi CV</a
+                        >
+                    </div>
+                    <div
+                        class="hero-right"
+                        data-aos-delay="400"
+                        data-aos="fade-left"
+                    >
+                        <img src="./assets/img/Robotics.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="icon__dowloader">
+                    <div
+                        class="container-icon"
+                        data-aos-delay="700"
+                        data-aos="fade-down"
+                    >
+                        <a class="btn-down" href="#about-me">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="icon__dowloader">
+                    <div class="container-icon top">
+                        <i class="fa-solid fas fa-arrow-up icon__arrow-top"></i>
+                    </div>
+                </div>
             </div>
-            <div class="especialization_item" data-aos-delay="250" data-aos="fade-down">
-              <h3>Desarrollo de Software</h3>
-              <p>
-                Durante mis años como profesional he ido adquiriendo nuevas
-                habiliades en el desarrollo y perfeccionando otras.<br />
-                He desarrollado software sobre ambientes de backend y frontend
-              </p>
-              <img class="dev" src="assets/img/2.png" alt="" />
+            <img src="assets/img/Vector-primary.png" alt="" class="vector" />
+
+            <!-- ========= SECTION ABOT ME ======= -->
+            <section
+                class="about__me padding-x-md padding-y-lg padding-bottom-xxl"
+                id="about-me"
+            >
+                <div
+                    class="sub-heading margin-bottom-md"
+                    data-aos-delay="500"
+                    data-aos="fade-down"
+                >
+                    <h2>Sobre mi</h2>
+                </div>
+                <figure>
+                    <div
+                        class="content"
+                        data-aos-delay="500"
+                        data-aos="fade-right"
+                    >
+                        <span class="comillas"> &rdquor; </span>
+                        <img src="./assets/img/Figure.png" alt="about-me" />
+                        <figcaption>
+                            <strong>¿Quien soy?</strong> 😎, Ingeniero en
+                            computación e informática, desarrollador y diseñador
+                            UI. Soy un apasionado del mundo de las tecnologías,
+                            pero sobre todo un creador. Después de graduarme de
+                            la universidad con el título de Ingeniero en
+                            computación mis comienzos fueron en el mundo del
+                            desarrollo de software y soporte de las tecnologias
+                            de la información.
+                            <br class="br" />
+                            Ahora tengo más de 10 años en distintas áreas dentro
+                            del rubro tecnológico el cual han fortalecido mis
+                            habilidades profesionales. Mi experiencia laboral va
+                            desde levantar infraestructura hasta el desarrollo
+                            de software.
+                        </figcaption>
+                    </div>
+                </figure>
+            </section>
+            <!-- ========= SECTION END ABOT ME ======= -->
+
+            <!-- ========= SECTION Especializacion y Habilidades  ======= -->
+
+            <section
+                class="especialization padding-x-md margin-bottom-lg"
+                id="especializacion"
+            >
+                <div
+                    class="sub-heading margin-bottom-sm"
+                    data-aos-delay="300"
+                    data-aos="fade-down"
+                >
+                    <h2>Especializacion y Habilidades</h2>
+                </div>
+
+                <div class="main__especialization padding-y-lg">
+                    <div
+                        class="main__especialization-left"
+                        data-aos-delay="400"
+                        data-aos="fade-right"
+                    >
+                        <div class="container">
+                            <div class="progress-container">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="especializations">
+                            <div
+                                class="especializations-item"
+                                data-aos-delay="400"
+                                data-aos="fade-up"
+                            >
+                                <h3>Ingeniero en computación e Informática</h3>
+                                <p>
+                                    Me he desempeñado como encargado del
+                                    departamento de tecnologias. Las funciones
+                                    principales son de administrador de sistemas
+                                    e infraestructura, la toma de decisiones
+                                    para velar por la continua operatividad de
+                                    la empresa,adicional a esto en la busqueda
+                                    de mejoras a nivel tecnológico.
+                                </p>
+                                <img src="assets/img/1.png" alt="" />
+                            </div>
+                            <div
+                                class="especializations-item"
+                                data-aos-delay="600"
+                                data-aos="fade-up"
+                            >
+                                <h3>Desarrollo de Software</h3>
+                                <p>
+                                    El creacion de programas ha sido parte de mi
+                                    carrera profesional, buscando nuevas ideas y
+                                    formas de solucionar problemas internos de
+                                    las empresas en las cuales me he
+                                    desempeñado. Optimizando tareas y creando
+                                    aplicaciones que puedan tener la
+                                    trazabilidad e historial de procesos que no
+                                    se registran en otros software de mayor
+                                    tamaño. He ocupado herramientas tanto para
+                                    el backend y frontend.
+                                </p>
+                                <img
+                                    class="icon-large"
+                                    src="assets/img/2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div
+                                class="especializations-item"
+                                data-aos-delay="800"
+                                data-aos="fade-up"
+                            >
+                                <h3>Diseño UI</h3>
+                                <p>
+                                    Mis trabajos de diseño UI, se han basado y
+                                    han nacido a raiz de los mismos
+                                    requeremientos de mis desarrollos,creando
+                                    interfaces que puedan mostrar visualmente a
+                                    los clientes un producto final y siendo
+                                    parte este del proceso de desarrollo de
+                                    software. El cual es importante para las
+                                    <b>definiciones</b> de la solucion. <br />
+                                    <i>"Una guia visual para mi desarrollo"</i>.
+                                </p>
+                                <img src="assets/img/3.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="main__especialization-right"
+                        data-aos-delay="400"
+                        data-aos="fade-left"
+                    >
+                        <div
+                            class="skill"
+                            data-aos-delay="200"
+                            data-aos="fade-left"
+                        >
+                            <div class="progress-skill html"></div>
+                            <h4>Html</h4>
+                            <br />
+                            <span class="html"></span>
+                        </div>
+                        <div
+                            class="skill"
+                            data-aos-delay="300"
+                            data-aos="fade-left"
+                        >
+                            <div class="progress-skill js"></div>
+                            <h4>Js</h4>
+                            <br />
+                            <span class="js"></span>
+                        </div>
+                        <div
+                            class="skill"
+                            data-aos-delay="400"
+                            data-aos="fade-left"
+                        >
+                            <div class="progress-skill python"></div>
+                            <h4>Python</h4>
+                            <br />
+                            <span class="py"></span>
+                        </div>
+                        <div
+                            class="skill"
+                            data-aos-delay="500"
+                            data-aos="fade-left"
+                        >
+                            <div class="progress-skill css"></div>
+                            <h4>Css</h4>
+                            <br />
+                            <span class="css"></span>
+                        </div>
+                        <div
+                            class="skill"
+                            data-aos-delay="600"
+                            data-aos="fade-left"
+                        >
+                            <div class="progress-skill typescrypt"></div>
+                            <h4>Typescript</h4>
+                            <br />
+                            <span class="ty"></span>
+                        </div>
+                        <div
+                            class="skill"
+                            data-aos-delay="700"
+                            data-aos="fade-left"
+                        >
+                            <div class="progress-skill git"></div>
+                            <h4>Git</h4>
+                            <br />
+                            <span class="git"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tecnologies margin-bottom-xl">
+                    <div class="sub-heading">
+                        <h3 class="">Tecnologías</h3>
+                    </div>
+
+                    <div
+                        class="container__icons margin-top-md"
+                        data-aos-delay="300"
+                        data-aos="fade-down"
+                    >
+                        <div class="grid grid--9-cols">
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/wordpress.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech large"
+                                src="assets/img/tecnologies/vmware.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech large"
+                                src="assets/img/tecnologies/aws.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/azure.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/microsoft.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/pbi.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/PS.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/git.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/docker.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="grid grid--6-cols">
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/py.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech large"
+                                src="assets/img/tecnologies/sass.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/postgress.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/jsnode.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech large"
+                                src="assets/img/tecnologies/mysql.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/msql.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="grid grid--7-cols">
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/figma.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/react.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/tailwindcss.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/js.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech large"
+                                src="assets/img/tecnologies/express.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech"
+                                src="assets/img/tecnologies/html.png"
+                                alt=""
+                            />
+                            <img
+                                class="icon_tech item-center"
+                                src="assets/img/tecnologies/css.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========= END SECTION Especializacion y Habilidades  ======= -->
+
+            <!-- ========= SECTION EXPERIENCIA  ======= -->
+            <section
+                class="experience padding-x-md padding-y-lg padding-bottom-lg"
+                id="experiences"
+            >
+                <div
+                    class="sub-heading margin-bottom-sm padding-top-md"
+                    data-aos-delay="400"
+                    data-aos="fade-down"
+                >
+                    <h2>Experiencia</h2>
+                </div>
+                <div class="container__main">
+                    <div
+                        class="container__main-left"
+                        data-aos-delay="350"
+                        data-aos="fade-right"
+                    >
+                        <ul>
+                            <li
+                                data-tab="ingenieria"
+                                class="list-item-exp active"
+                            >
+                                <button class="prev active" id="left1">
+                                    <i class="fa fa-arrow-left"></i>
+                                </button>
+                                Ingeniería
+                                <button class="next active" id="right1">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </li>
+
+                            <li data-tab="software" class="list-item-exp">
+                                <button class="prev" id="left2">
+                                    <i class="fa fa-arrow-left"></i>
+                                </button>
+                                Software
+                                <button class="next" id="right2">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </li>
+
+                            <li data-tab="diseno" class="list-item-exp">
+                                <button class="prev" id="left3">
+                                    <i class="fa fa-arrow-left"></i>
+                                </button>
+                                Diseño
+                                <button class="next" id="right3">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="container__main-right"
+                        data-aos-delay="400"
+                        data-aos="fade-left"
+                    >
+                        <div class="content carousel active" id="ingenieria">
+                            <div class="card-container" id="cardsIng">
+                                <!--LIST CARDS 1 -->
+                                <div class="card item-card" id="ingenieria">
+                                    <!-- CARD 1 -->
+                                    <div
+                                        class="item"
+                                        data-aos-delay="600"
+                                        data-aos="fade-left"
+                                    >
+                                        <h1>Gestión del departamento de TIC</h1>
+                                        <span class="datespan">2014-2023</span>
+                                        <div class="tags">
+                                            <span>Gestión</span>
+                                            <span>Análisis</span>
+                                            <span>Administración</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Gestión del departamento de TIC,
+                                            análisis de la arquitectura de redes
+                                            y datos, Internet y seguridad de la
+                                            red corporativa.
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <!-- CARD 2 -->
+                                    <div
+                                        class="item"
+                                        data-aos-delay="800"
+                                        data-aos="fade-left"
+                                    >
+                                        <h1>Analisis de datos</h1>
+                                        <span class="datespan">2023</span>
+                                        <div class="tags">
+                                            <span>PowerBI</span>
+                                            <span>Sql</span>
+                                            <span>Análisis</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Análisis de datos con power BI y SQL
+                                            server para generar dashboard para
+                                            la gestión.
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <!-- CARD 3 -->
+                                    <div
+                                        class="item"
+                                        data-aos-delay="1000"
+                                        data-aos="fade-left"
+                                    >
+                                        <h1>
+                                            Creación de Infraestructura de
+                                            Host´s con VMware
+                                        </h1>
+                                        <span class="datespan">2023</span>
+                                        <div class="tags">
+                                            <span>VMWare</span>
+                                            <span>Veem Backup</span>
+                                            <span>Infraestructura</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Este proyecto consta en levantar
+                                            maquinas virtuales dentro de varios
+                                            host ,se levantan 8 maquinas
+                                            virtuales. Adcional se levanta un
+                                            servidor para manejar los respaldos
+                                            con Veeam Backup.
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card item-card" id="ingenieria">
+                                    <div class="item">
+                                        <h1>
+                                            Proyecto de software de pesaje para
+                                            el puerto internacional y centro
+                                            logistico
+                                        </h1>
+                                        <span class="datespan">2016</span>
+                                        <div class="tags">
+                                            <span>VMWare</span>
+                                            <span>Veem Backup</span>
+                                            <span>Infraestructura</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Se realiza el levantamiento de las
+                                            necesidades del puerto para crear a
+                                            medida un software con un proveedor
+                                            externo, con esto poder implementar
+                                            este sistema y poder manejar la
+                                            descargar y bodegas de la empresa
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h1>
+                                            Gestión de desarrollos de software
+                                        </h1>
+                                        <span class="datespan">2015</span>
+                                        <div class="tags">
+                                            <span>VMWare</span>
+                                            <span>Veem Backup</span>
+                                            <span>Infraestructura</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Este es un gran proyecto que evalua
+                                            el desarrollo de 3 sistemas web.
+                                            <br />
+                                            Sistema de combustible | Sistema de
+                                            ticket TIC | Sistema de Cobranza
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- software -->
+                        <!--  -->
+                        <div class="content carousel" id="software">
+                            <div class="card-container" id="cardsSoft">
+                                <div class="card item-card" id="software">
+                                    <div class="item">
+                                        <h1>
+                                            Software de gestion de incidentes
+                                        </h1>
+                                        <span class="datespan">2023</span>
+                                        <div class="tags">
+                                            <span>Desarrollo</span>
+                                            <span>ReactJS</span>
+                                            <span>NodeJS</span>
+                                            <span>MongoDB</span>
+                                            <span>RestAPI</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Se desarrolla una aplicacion web que
+                                            gestiona todos los incidentes
+                                            reportados por un turno de 8 horas
+                                            en el puerto Con esto se puede
+                                            llevar trazabilidad de los eventos y
+                                            sucesos ocurridos. Antes se llevaba
+                                            a papel y via correo.
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Aplicacion web para ticket TIC</h1>
+                                        <span class="datespan">2022</span>
+                                        <div class="tags">
+                                            <span>Desarrollo</span>
+                                            <span>ReactJS</span>
+                                            <span>RestAPI</span>
+                                            <span>NodeJS</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Este desarrollo implica la
+                                            contruccion de un sitio web que
+                                            permita llevar registrar los ticket
+                                            generados a traves de solicitudes
+                                            por la plataforma al departamento de
+                                            tecnologia, con esto podemos llevar
+                                            a cabo trazabilidad de ticket y del
+                                            soporte a traves de estadisticas que
+                                            se entrega a los usuarios de la
+                                            empresa
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Sitio web - Servicios TIC</h1>
+                                        <span class="datespan">2022</span>
+                                        <div class="tags">
+                                            <span>Desarrollo</span>
+                                            <span>NextJS</span>
+                                            <span>NodeJS</span>
+                                            <span>Css</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Se realiza un sitio web para mostrar
+                                            los diversos servicios informaticos
+                                            que ofrezco como freelance
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card item-card" id="software">
+                                    <!-- item 3 -->
+
+                                    <div class="item">
+                                        <h1>Ecommerce para tienda online</h1>
+                                        <span class="datespan">2023</span>
+                                        <div class="tags">
+                                            <span>Desarrollo</span>
+                                            <span>Wordpress</span>
+                                            <span>Ecommerce</span>
+                                            <span>Css</span>
+                                            <span>Php</span>
+                                            <span>Hosting</span>
+                                            <span>Cpanel</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Se crea un CMS para tienda online
+                                            para la marca Bawual Co.
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <!-- Diseno -->
+                        <!--  -->
+                        <div class="content carousel" id="diseno">
+                            <div class="card-container" id="cardsDiseno">
+                                <!-- CARD 1 -->
+                                <div class="card item-card" id="diseno">
+                                    <div class="item">
+                                        <h1>Diseño de Portafolio</h1>
+                                        <span class="datespan">2023</span>
+                                        <div class="tags">
+                                            <span>Figma</span>
+                                            <span>Tablet</span>
+                                            <span>UI</span>
+                                            <span>Recursos</span>
+                                            <span>Excalidraw</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Se diseña el sitio web para mi
+                                            portafolio con el programa figma.Se
+                                            comienza con el diseño de sistema
+                                            para definir colores ,typografias
+                                            ,imagenes , y el layout en sus
+                                            distintas visuales para crear el
+                                            sitio en responsive.
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Diseño Aplicaciones TIC</h1>
+                                        <span class="datespan">2023</span>
+                                        <div class="tags">
+                                            <span>Figma</span>
+                                            <span>UI</span>
+                                            <span>Recursos</span>
+                                            <span>Excalidraw</span>
+                                            <span>Tablet</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Diseño de interfaz para el usuario,
+                                            donde el mismo pueda ingresar sus
+                                            incidencias hacia el area de
+                                            tecnologias
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h1>Diseño Gestion de incidentes</h1>
+                                        <span class="datespan">2023</span>
+                                        <div class="tags">
+                                            <span>Figma</span>
+                                            <span>UI</span>
+                                            <span>Recursos</span>
+                                            <span>Tablet</span>
+                                            <span>Excalidraw</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Diseño de interfaz para el usuario
+                                            donde muestra visualmente como
+                                            ingresar, gestionar insicidencias
+                                            dentro del puerto maritimo.
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card item-card" id="diseno">
+                                    <div class="item">
+                                        <h1>Diseño sitio web servicio TIC</h1>
+                                        <span class="datespan">2023</span>
+                                        <div class="tags">
+                                            <span>Figma</span>
+                                            <span>UI</span>
+                                            <span>Recursos</span>
+                                            <span>Excalidraw</span>
+                                            <span>Tablet</span>
+                                        </div>
+                                        <h5>Descripcion del proyecto :</h5>
+                                        <p>
+                                            Diseño de sitio web mostrando los
+                                            servicios de tecnologias que ofrezco
+                                        </p>
+                                        <div class="item__bottom">
+                                            <a href="#">Link</a>
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- END CARD 1 -->
+                            </div>
+
+                            <!-- END CARD 2 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========= END SECTION EXPERIENCIA  ======= -->
+        </main>
+
+        <!-- ========= FOOTER  ======= -->
+        <footer id="contact">
+            <div class="superposicion" data-aos-delay="400" data-aos="fade-up">
+                <div class="enlace">
+                    <p>!Puedes revisar mis servicios tecnologios 🤓 ...</p>
+                    <a href="#">Pinchando aqui</a>
+                </div>
+                <img class="nave" src="./assets/img/space ship.png" alt="" />
             </div>
-            <div class="especialization_item" data-aos-delay="300" data-aos="fade-down">
-              <h3>Diseño UI</h3>
-              <p>
-                Parte del trabajo de diseño de interfaz se crea para poder
-                entregar a los usuarios o clientes una visualizacion del
-                sistema que se creará<br />
-                Tambien funciona como una guia para el desarrollo con el cual
-                trabajo.
-              </p>
-              <img src="assets/img/3.png" alt="" />
+            <div class="footer__bottom">
+                <div class="developers">
+                    <p>
+                        Este sitio fue desarrollado con tecnologias como <br />
+                        HTML - CSS - Vanilla JS
+                    </p>
+                </div>
+                <!-- FOOTER BOTTOM -->
+                <div class="copyr">
+                    <p class="">
+                        &COPY; <span class="year">year</span> Todos los derechos
+                        reservados - Por Francisco Soto | Portfolio V1.0.0
+                    </p>
+                </div>
+                <div class="redes_sociales">
+                    <a target="_blank" href="https://github.com/daeselixir">
+                        <img src="assets/img/Git.png" alt="" />
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/franciscosotoh/"
+                    >
+                        <img src="assets/img/li.png" alt="" />
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- RIGHT -->
-        <div class="habililities" data-aos-delay="300" data-aos="fade-right">
-          <div class="skill" data-aos-delay="500" data-aos="fade-down">
-            <div class="progress-skill html"></div>
-            <h4>Html</h4>
-            <span class="html"></span>
-          </div>
-          <div class="skill" data-aos-delay="550" data-aos="fade-down">
-            <div class="progress-skill js"></div>
-            <h4>Js</h4>
-            <span class="js"></span>
-          </div>
-          <div class="skill" data-aos-delay="600" data-aos="fade-down">
-            <div class="progress-skill python"></div>
-            <h4>Python</h4>
-            <span class="py"></span>
-          </div>
-          <div class="skill" data-aos-delay="650" data-aos="fade-down">
-            <div class="progress-skill css"></div>
-            <h4>Css</h4>
-            <span class="css"></span>
-          </div>
-          <div class="skill" data-aos-delay="700" data-aos="fade-down">
-            <div class="progress-skill typescrypt"></div>
-            <h4>Typescript</h4>
-            <span class="ty"></span>
-          </div>
-          <div class="skill" data-aos-delay="750" data-aos="fade-down">
-            <div class="progress-skill git"></div>
-            <h4>Git</h4>
-            <span class="git"></span>
-          </div>
-        </div>
-      </div>
-      <div class="tecnologies">
-        <h3 class="title__subtitle-section" data-aos-delay="300" data-aos="fade-right">Tecnologias</h3>
+        </footer>
+        <!-- ========= END FOOTER  ======= -->
 
-        <div class="container__iconos" data-aos-delay="300" data-aos="fade-up">
-          <div class="row">
-            <img class="icon_tech" src="assets/img/tecnologies/wordpress.png" alt="" />
-            <img class="icon_tech large" src="assets/img/tecnologies/vmware.png" alt="" />
-            <img class="icon_tech alrge" src="assets/img/tecnologies/aws.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/azure.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/microsoft.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/pbi.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/PS.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/git.png" alt="" />
-            <!-- <img class="icon_tech" src="assets/img/tecnologies/shopyfy.png" alt="" /> -->
-            <img class="icon_tech" src="assets/img/tecnologies/docker.png" alt="" />
-          </div>
-
-          <div class="row">
-            <img class="icon_tech" src="assets/img/tecnologies/figma.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/react.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/tailwindcss.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/js.png" alt="" />
-            <!-- <img class="icon_tech large" src="assets/img/tecnologies/next.png" alt="" /> -->
-            <img class="icon_tech" src="assets/img/tecnologies/express.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/html.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/css.png" alt="" />
-          </div>
-          <div class="row">
-            <!-- <img class="icon_tech" src="assets/img/tecnologies/y¿ts.png" alt="" /> -->
-            <img class="icon_tech" src="assets/img/tecnologies/py.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/sass.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/postgress.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/jsnode.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/mysql.png" alt="" />
-            <img class="icon_tech" src="assets/img/tecnologies/msql.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========= END SECTION Especializacion y Habilidades  ======= -->
-
-    <!-- ========= SECTION EXPERIENCIA  ======= -->
-
-    <section class="experience" id="experiences">
-      <div class="title-experiencia">
-        <h4 class="" data-aos-delay="300" data-aos="fade-down">
-          Experiencia
-        </h4>
-      </div>
-      <div class="container__main">
-        <!-- AREA LEFT -->
-        <div class="left" data-aos-delay="300" data-aos="fade-up">
-          <ul>
-            <li data-tab="ingenieria" class="list-item-exp active">
-              <button class="prev active" id="left1">
-                <i class="fa fa-arrow-left"></i>
-              </button>
-              Ingenieria
-              <button class="next active" id="right1">
-                <i class="fa fa-arrow-right"></i>
-              </button>
-            </li>
-
-            <li data-tab="software" class="list-item-exp">
-              <button class="prev" id="left2">
-                <i class="fa fa-arrow-left"></i>
-              </button>
-              Software
-              <button class="next" id="right2">
-                <i class="fa fa-arrow-right"></i>
-              </button>
-            </li>
-
-            <li data-tab="diseno" class="list-item-exp">
-              <button class="prev" id="left3">
-                <i class="fa fa-arrow-left"></i>
-              </button>
-              Diseño
-              <button class="next" id="right3">
-                <i class="fa fa-arrow-right"></i>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <!-- END AREA LEFT -->
-        <!-- AREA RIGHT -->
-        <div class="right" data-aos-delay="300" data-aos="fade-up">
-          <div class="contenido carousel active" id="ingenieria">
-            <div class="card-container" id="cardsIng">
-              <!-- CARD 1 -->
-              <div class="card item-card" id="ingenieria">
-                <div class="item">
-                  <h1>Gestión del departamento de TIC</h1>
-                  <span class="datespan">2014-2023</span>
-                  <div class="tags">
-                    <span>Gestion</span>
-                    <span>Analisis</span>
-                    <span>Administracion</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Gestión del departamento de TIC, análisis de la
-                    arquitectura de redes y datos, Internet y seguridad de la
-                    red corporativa.
-                  </p>
-                  <div class="item__bottom">
-                    <a href="#">Link</a>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </div>
-                </div>
-                <div class="item">
-                  <h1>Analisis de datos</h1>
-                  <span class="datespan">2023</span>
-                  <div class="tags">
-                    <span>PowerBI</span>
-                    <span>Sql</span>
-                    <span>Analisis</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Análisis de datos con power BI y SQL server para generar
-                    dashboard para la gestión.
-                  </p>
-                  <div class="item__bottom">
-                    <a href="#">Link</a>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </div>
-                </div>
-                <div class="item">
-                  <h1>Creación de Infraestructura de Host´s con VMware</h1>
-                  <span class="datespan">2015</span>
-                  <div class="tags">
-                    <span>VMWare</span>
-                    <span>Veem Backup</span>
-                    <span>Infraestructura</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Este proyecto consta en levantar maquinas virtuales dentro
-                    de varios host ,se levantan 8 maquinas virtuales. Adcional
-                    se levanta un servidor para manejar los respaldos con
-                    Veeam Backup
-                  </p>
-                  <div class="item__bottom">
-                    <a href="#">Link</a>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </div>
-                </div>
-              </div>
-
-              <!-- END CARD 1 -->
-              <!-- CARD 2-->
-
-              <div class="card item-card" id="ingenieria">
-                <div class="item">
-                  <h1>
-                    Proyecto de software de pesaje para el puerto
-                    internacional y centro logistico
-                  </h1>
-                  <span class="datespan">2016</span>
-                  <div class="tags">
-                    <span>VMWare</span>
-                    <span>Veem Backup</span>
-                    <span>Infraestructura</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Se realiza el levantamiento de las necesidades del puerto
-                    para crear a medida un software con un proveedor externo,
-                    con esto poder implementar este sistema y poder manejar la
-                    descargar y bodegas de la empresa
-                  </p>
-                </div>
-                <div class="item">
-                  <h1>Gestión de desarrollos de software</h1>
-                  <span class="datespan">2015</span>
-                  <div class="tags">
-                    <span>VMWare</span>
-                    <span>Veem Backup</span>
-                    <span>Infraestructura</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Este es un gran proyecto que evalua el desarrollo de 3
-                    sistemas web.
-                    <br />
-                    Sistema de combustible | Sistema de ticket TIC | Sistema
-                    de Cobranza
-                  </p>
-                </div>
-              </div>
-              <!-- END CARD 2 -->
-            </div>
-          </div>
-
-          <!-- software -->
-          <div class="contenido carousel" id="software">
-            <div class="card-container" id="cardsSoft">
-              <!-- CARD 1 -->
-              <div class="card item-card" id="software">
-                <div class="item">
-                  <h1>Software de gestion de incidentes</h1>
-                  <span class="datespan">2023</span>
-                  <div class="tags">
-                    <span>Desarrollo</span>
-                    <span>ReactJS</span>
-                    <span>NodeJS</span>
-                    <span>MongoDB</span>
-                    <span>RestAPI</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Se desarrolla una aplicacion web que gestiona todos los
-                    incidentes reportados por un turno de 8 horas en el puerto
-                    Con esto se puede llevar trazabilidad de los eventos y
-                    sucesos ocurridos. Antes se llevaba a papel y via correo.
-                  </p>
-                </div>
-                <!-- item 2 -->
-
-                <div class="item">
-                  <h1>Aplicacion web para ticket TIC</h1>
-                  <span class="datespan">2022</span>
-                  <div class="tags">
-                    <span>Desarrollo</span>
-                    <span>ReactJS</span>
-                    <span>RestAPI</span>
-                    <span>NodeJS</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Este desarrollo implica la contruccion de un sitio web que
-                    permita llevar registrar los ticket generados a traves de
-                    solicitudes por la plataforma al departamento de
-                    tecnologia, con esto podemos llevar a cabo trazabilidad de
-                    ticket y del soporte a traves de estadisticas que se
-                    entrega a los usuarios de la empresa
-                  </p>
-                </div>
-              </div>
-
-              <!-- END CARD 1 -->
-              <!-- CARD 2-->
-
-              <div class="card item-card" id="software">
-                <!-- item 3 -->
-                <div class="item">
-                  <h1>Sitio web - Servicios TIC</h1>
-                  <span class="datespan">2022</span>
-                  <div class="tags">
-                    <span>Desarrollo</span>
-                    <span>NextJS</span>
-                    <span>NodeJS</span>
-                    <span>Css</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Se realiza un sitio web para mostrar los diversos
-                    servicios informaticos que ofrezco como freelance
-                  </p>
-                </div>
-                <div class="item">
-                  <h1>Ecommerce para tienda online</h1>
-                  <span class="datespan">2023</span>
-                  <div class="tags">
-                    <span>Desarrollo</span>
-                    <span>Wordpress</span>
-                    <span>Ecommerce</span>
-                    <span>Css</span>
-                    <span>Php</span>
-                    <span>Hosting</span>
-                    <span>Cpanel</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Se crea un CMS para tienda online para la marca Bawual Co.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- END CARD 2 -->
-          </div>
-          <!-- Diseño -->
-          <div class="contenido carousel" id="diseno">
-            <div class="card-container" id="cardsDiseno">
-              <!-- CARD 1 -->
-              <div class="card item-card" id="diseno">
-                <div class="item">
-                  <h1>Diseno</h1>
-                  <span class="datespan">2023</span>
-                  <div class="tags">
-                    <span>Desarrollo</span>
-                    <span>ReactJS</span>
-                    <span>NodeJS</span>
-                    <span>MongoDB</span>
-                    <span>RestAPI</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Se desarrolla una aplicacion web que gestiona todos los
-                    incidentes reportados por un turno de 8 horas en el puerto
-                    Con esto se puede llevar trazabilidad de los eventos y
-                    sucesos ocurridos. Antes se llevaba a papel y via correo.
-                  </p>
-                </div>
-                <div class="item">
-                  <h1>Diseno</h1>
-                  <span class="datespan">2023</span>
-                  <div class="tags">
-                    <span>Desarrollo</span>
-                    <span>ReactJS</span>
-                    <span>NodeJS</span>
-                    <span>MongoDB</span>
-                    <span>RestAPI</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Se desarrolla una aplicacion web que gestiona todos los
-                    incidentes reportados por un turno de 8 horas en el puerto
-                    Con esto se puede llevar trazabilidad de los eventos y
-                    sucesos ocurridos. Antes se llevaba a papel y via correo.
-                  </p>
-                </div>
-              </div>
-              <div class="card item-card" id="diseno">
-                <div class="item">
-                  <h1>Diseno</h1>
-                  <span class="datespan">2023</span>
-                  <div class="tags">
-                    <span>Desarrollo</span>
-                    <span>ReactJS</span>
-                    <span>NodeJS</span>
-                    <span>MongoDB</span>
-                    <span>RestAPI</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Se desarrolla una aplicacion web que gestiona todos los
-                    incidentes reportados por un turno de 8 horas en el puerto
-                    Con esto se puede llevar trazabilidad de los eventos y
-                    sucesos ocurridos. Antes se llevaba a papel y via correo.
-                  </p>
-                </div>
-                <div class="item">
-                  <h1>Diseno</h1>
-                  <span class="datespan">2023</span>
-                  <div class="tags">
-                    <span>Desarrollo</span>
-                    <span>ReactJS</span>
-                    <span>NodeJS</span>
-                    <span>MongoDB</span>
-                    <span>RestAPI</span>
-                  </div>
-                  <h5>Descripcion del proyecto :</h5>
-                  <p>
-                    Se desarrolla una aplicacion web que gestiona todos los
-                    incidentes reportados por un turno de 8 horas en el puerto
-                    Con esto se puede llevar trazabilidad de los eventos y
-                    sucesos ocurridos. Antes se llevaba a papel y via correo.
-                  </p>
-                </div>
-              </div>
-
-              <!-- END CARD 1 -->
-            </div>
-
-            <!-- END CARD 2 -->
-          </div>
-        </div>
-        <!-- END AREA RIGHT -->
-      </div>
-    </section>
-    <!-- =========END SECTION EXPERIENCIA  ======= -->
-  </main>
-  <!-- ========= END MAIN ======= -->
-
-  <!-- ========= FOOTER  ======= -->
-  <footer id="contact">
-    <div class="superposicion">
-      <div class="enlace">
-        <p>!Puedes revisar mis servicios tecnologios...</p>
-        <a href="#">Pinchando aqui</a>
-      </div>
-      <img class="nave" src="./assets/img/space ship.png" alt="">
-    </div>
-
-
-    <div class="developers">
-      <p>Este sitio fue desarrollado con tecnologias como : <br>
-        Html - Css - Vanilla JS
-      </p>
-    </div>
-    <!-- FOOTER BOTTOM -->
-    <div class="copyr">
-      <p class="">
-        &COPY; <span class="year">year</span> Todos los derechos reservados -
-        Por Francisco Soto
-      </p>
-    </div>
-    <div class="redes_sociales">
-      <a target="_blank" href="https://github.com/daeselixir">
-        <img src="assets/img/Git.png" alt="" />
-      </a>
-      <img src="assets/img/Instagram.png" alt="" />
-      <a target="_blank" href="https://www.linkedin.com/in/franciscosotoh/">
-        <img src="assets/img/li.png" alt="" />
-      </a>
-
-    </div>
-
-  </footer>
-
-  <!-- ========= END FOOTER  ======= -->
-
-  <!-- SCRIPTS -->
-  <script src="./assets/swiper-bundle.min.js"></script>
-  <script src="assets/aos.js"></script>
-  <script src="assets/main.js"></script>
-  <script src="https://kit.fontawesome.com/56274993d0.js" crossorigin="anonymous"></script>
-</body>
-
+        <!-- SCRIPTS -->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/aos.js"></script>
+        <script src="assets/js/main.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/56274993d0.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
