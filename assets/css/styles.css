@@ -511,7 +511,7 @@ button.active {
     gap: 0;
     grid-template-columns: 50% 50%;
     justify-items: center;
-    border: 2px dashed greenyellow;
+    /* border: 2px dashed greenyellow; */
 }
 .experience .container__main .container__main-left {
     width: 100%;
@@ -572,7 +572,7 @@ button.active {
 .experience .container__main .container__main-right {
     width: 100%;
     height: 100%;
-    border: 2px dashed salmon;
+    /* border: 2px dashed salmon; */
 }
 .experience .container__main .container__main-right .content {
     visibility: hidden;
